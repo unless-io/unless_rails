@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home]
-
   def home
+    page = helpers.set_page('home')
+    @left = helpers.set_section(page, "left")
+    @right = helpers.set_section(page, "right")
   end
 end
