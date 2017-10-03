@@ -1,3 +1,3 @@
 class TextArea < ApplicationRecord
-  belongs_to :sections
+  belongs_to :section
 end
