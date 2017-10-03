@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171003130201) do
+ActiveRecord::Schema.define(version: 20171003153013) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "benefits", force: :cascade do |t|
+    t.integer  "service_id"
+    t.string   "fontawesome"
+    t.string   "title"
+    t.text     "content"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["service_id"], name: "index_benefits_on_service_id", using: :btree
+  end
 
   create_table "blogs", force: :cascade do |t|
     t.string   "header"
@@ -106,6 +116,16 @@ ActiveRecord::Schema.define(version: 20171003130201) do
     t.index ["page_id"], name: "index_sections_on_page_id", using: :btree
   end
 
+  create_table "services", force: :cascade do |t|
+    t.string   "name"
+    t.string   "fontawesome"
+    t.string   "header"
+    t.text     "content"
+    t.string   "keypoints",   default: [],              array: true
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
   create_table "text_areas", force: :cascade do |t|
     t.string   "identifier"
     t.integer  "section_id"
@@ -142,6 +162,7 @@ ActiveRecord::Schema.define(version: 20171003130201) do
     t.index ["section_id"], name: "index_video_media_on_section_id", using: :btree
   end
 
+  add_foreign_key "benefits", "services"
   add_foreign_key "blogs", "users"
   add_foreign_key "headers", "sections"
   add_foreign_key "image_media", "sections"
