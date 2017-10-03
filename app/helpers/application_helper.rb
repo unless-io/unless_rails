@@ -14,4 +14,10 @@ module ApplicationHelper
   def set_page(identifier)
     Page.find_by(identifier: identifier)
   end
+
+
+  def is_home?
+    return true if params[:controller] == 'pages' && params[:action] == 'home'
+  end
+
 end
