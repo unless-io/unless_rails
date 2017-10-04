@@ -1,12 +1,20 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="two-columns">
+  <div class="left">
+    <p class="big-quote">
+      <%= set_header(@left, 'header-left') %>
+    </p>
+  </div>
 
 
-<div class="left">
-  <%= set_header(@left, 'header-left') %>
-</div>
-
-
-<div class="right">
-  <%= set_text_area(@right, 'main') %>
+  <div class="right">
+    <div class="right-content">
+      <p class="first-paragraph">
+        <%= set_text_area(@right, 'main-1') %>
+      </p>
+      <p class="second-paragraph">
+        <%= set_text_area(@right, 'main-2') %>
+      </p>
+      <%= link_to "Say hi", contact_about_path, class: 'button-white-outline' %>
+    </div>
+  </div>
 </div>
