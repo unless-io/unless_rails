@@ -1,4 +1,5 @@
 .button-white {
+  display: inline-block;
   color: $brand-color;
   background-color: white;
   padding: 5px 17px;
@@ -10,8 +11,22 @@
 }
 
 .button-red {
+  display: inline-block;
   color: white;
   background-color: $brand-color;
+  padding: 5px 17px;
+  font-weight: 600;
+  &:hover, &:focus, &:active, &:visited {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.button-white-outline {
+  display: inline-block;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
   padding: 5px 17px;
   font-weight: 600;
   &:hover, &:focus, &:active, &:visited {
