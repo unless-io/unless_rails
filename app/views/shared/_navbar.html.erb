@@ -1,1 +1,31 @@
-this is navbar
+<div class="navbar-unless <%= is_home? ? 'navbar-unless-inverted' : 'navbar-unless-regular' %>">
+  <%= link_to root_path, class: "logo" do %>
+  <% if is_home? %>
+    <%= image_tag 'unless_icon_white.svg' %>
+  <% else %>
+    <%= image_tag 'unless_icon_red.svg' %>
+  <% end %>
+  <span>
+    Unless
+  </span>
+  <% end %>
+
+  <div class="navbar-group-right">
+    <ul class="list-inline">
+      <li>
+        <%= link_to "About", about_path %>
+      </li>
+      <li>
+        <%= link_to "Services", services_path %>
+      </li>
+      <li>
+        <%= link_to "Portfolio", portfolio_path %>
+      </li>
+    </ul>
+    <% if is_home? %>
+      <%= link_to "Get in touch", contact_about_path, class: 'button-white' %>
+    <% else %>
+      <%= link_to "Get in touch", contact_about_path, class: 'button-red' %>
+    <% end %>
+  </div>
+</div>

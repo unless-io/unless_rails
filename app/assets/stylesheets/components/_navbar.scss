@@ -1,0 +1,81 @@
+.navbar-unless {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.navbar-unless .logo {
+  display: flex;
+  align-items: center;
+  img {
+    height: 50px;
+  }
+  span {
+    margin-left: 10px;
+    font-size: 42px;
+    font-family: Arvo;
+    font-weight: 700;
+    font-style: italic;
+  }
+  &:hover, &:focus, &:active, &:visited {
+    text-decoration: none;
+  }
+}
+
+.navbar-unless .navbar-group-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      a {
+        margin: 0 10px;
+        &:hover, &:focus, &:active, &:visited {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.navbar-unless-inverted {
+  .logo {
+    color: white;
+    &:hover, &:focus, &:active, &:visited {
+      color: white;
+    }
+  }
+  .navbar-group-right {
+    ul {
+      a {
+        color: white;
+        &:hover, &:focus, &:active, &:visited {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.navbar-unless-regular {
+  .logo {
+    color: $brand-color;
+    &:hover, &:focus, &:active, &:visited {
+      color: $brand-color;
+    }
+  }
+  .navbar-group-right {
+    ul {
+      a {
+        color: $brand-color;
+        &:hover, &:focus, &:active, &:visited {
+          color: $brand-color;
+        }
+      }
+    }
+  }
+}
