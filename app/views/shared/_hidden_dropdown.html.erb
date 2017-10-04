@@ -1,0 +1,65 @@
+<div id="o-wrapper" class="o-wrapper">
+
+  <div class="c-buttons">
+    <button id="c-button--slide-right" class="c-button <%= is_home? ? 'white' : 'red' %>">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- other content in here -->
+
+</div><!-- /o-wrapper -->
+
+<!-- menus here -->
+<nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+  <button class="c-menu__close">&larr; Close Menu</button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item c-menu-regular">
+      <%= link_to "Home", root_path, class: "c-menu__link"  %>
+    </li>
+    <li class="c-menu__item c-menu-regular">
+      <%= link_to "About", about_path, class: "c-menu__link"  %>
+      <ul class="c-menu-submenu">
+        <li>
+          <%= link_to "Blog", about_blogs_path  %>
+        </li>
+        <li>
+          <%= link_to "Method", method_about_path  %>
+        </li>
+        <li>
+          <%= link_to "Contact", contact_about_path  %>
+        </li>
+      </ul>
+    </li>
+    <li class="c-menu__item c-menu-regular">
+      <%= link_to "Services", services_path, class: "c-menu__link"  %>
+      <ul class="c-menu-submenu">
+        <li>
+          <%= link_to "MVP", mvp_services_path  %>
+        </li>
+        <li>
+          <%= link_to "Workshops", workshops_services_path  %>
+        </li>
+        <li>
+          <%= link_to "Sprints", sprints_services_path  %>
+        </li>
+      </ul>
+    </li>
+    <li class="c-menu__item c-menu-regular">
+      <%= link_to "Portfolio", portfolio_path, class: "c-menu__link"  %>
+      <ul class="c-menu-submenu">
+        <li>
+          <%= link_to "Projects", portfolio_projects_path  %>
+        </li>
+        <li>
+          <%= link_to "Partnerships", portfolio_partnerships_path  %>
+        </li>
+      </ul>
+    </li>
+    <li class="c-menu__item">
+      <%= link_to "Get in touch", contact_about_path, class: 'button-white' %>
+    </li>
+  </ul>
+</nav><!-- /c-menu slide-left -->
+
+<div id="c-mask" class="c-mask"></div><!-- /c-mask -->

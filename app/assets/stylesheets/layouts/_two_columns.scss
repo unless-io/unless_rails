@@ -1,0 +1,50 @@
+@media (max-width: 900px) {
+  .two-columns {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    .left {
+      min-height: 50vh;
+    }
+    .right {
+      min-height: 50vh;
+    }
+  }
+  .big-quote {
+    font-size: 50px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .two-columns {
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    .left {
+      min-height: calc(100vh - 265px);
+    }
+    .right {
+      min-height: calc(100vh - 265px);
+    }
+  }
+  .big-quote {
+    font-size: 80px;
+    max-width: 430px;
+  }
+}
+
+.two-columns {
+  width: 100%;
+  display: grid;
+  min-height: calc(100vh - 265px);
+  .left, .right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.big-quote {
+  font-family: Arvo;
+  font-weight: 700;
+  color: white;
+}

@@ -19,4 +19,6 @@ Header.create(identifier: "header-left", section: section_1, content: "Build it 
 
 section_2 = Section.create(page: page, identifier: "right")
 
-TextArea.create(identifier: "main", section: section_2, content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos non quibusdam voluptate amet ullam nemo est, perferendis accusamus repudiandae. Dolor.")
+TextArea.create(identifier: "main-1", section: section_2, content: "We're going to get straight to the point; we like to build stuff. What kind of stuff? Places where people can connect, where they can gather. Places where people can find what they're looking for.")
+TextArea.create(identifier: "main-2", section: section_2, content: "We love a challenge. Find us a group of people and a problem and we'll help you find, not only a great, but a beautiful solution. ")
+

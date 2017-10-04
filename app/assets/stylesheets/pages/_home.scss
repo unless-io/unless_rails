@@ -4,3 +4,22 @@
   background-image: linear-gradient(120deg, #f73859 0%, #fc856b 100%);
   background-repeat: no-repeat;
 }
+
+.right {
+  color: white;
+  align-items: flex-end;
+  .right-content {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 16px;
+    line-height: 27px;
+    .first-paragraph {
+      font-weight: 700;
+    }
+    .second-paragraph {
+      font-weight: 400;
+    }
+  }
+}
