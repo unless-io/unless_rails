@@ -1,21 +1,34 @@
 // To do: get css grid to work for three equal columns
-@media (min-width: 900px) {
-  .three-columns {
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 33% 33% 33%;
-  }
-  .left-three {
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
-  }
-  .middle-three {
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 1;
-  }
-  .middle-three {
-    grid-row: 1 / span 1;
-    grid-column: 3 / span 1;
+// @media (min-width: 900px) {
+//   .three-columns {
+//     display: grid;
+//     grid-template-rows: 100%;
+//     grid-template-columns: 33% 33% 33%;
+//   }
+//   .left-three {
+//     grid-row: 1 / span 1;
+//     grid-column: 1 / span 1;
+//   }
+//   .middle-three {
+//     grid-row: 1 / span 1;
+//     grid-column: 2 / span 1;
+//   }
+//   .middle-three {
+//     grid-row: 1 / span 1;
+//     grid-column: 3 / span 1;
+//   }
+// }
+
+// Write media query for mobile
+.three-columns {
+  display: flex;
+  align-items: center;
+  justify-content: inherit;
+  margin: 25px 0px;
+  .single-column-service {
+    min-width: 300px;
+    i {
+      color: $brand-color;
+    }
   }
 }
-
