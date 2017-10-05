@@ -9,9 +9,14 @@
   align-items: flex-end;
 }
 
+
 @media (min-width: 900px) {
   .image-services {
     max-width: 560px;
+    max-height: 384px;
+  }
+  .flex-right {
+    max-height: 384px;
   }
 }
 
@@ -20,5 +25,8 @@
     max-width: 560px;
     max-height: 225px;
     margin-top: 30px;
+  }
+  .flex-right {
+    max-height: 100%;
   }
 }
