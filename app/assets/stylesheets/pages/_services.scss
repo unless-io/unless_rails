@@ -1,3 +1,4 @@
+// Main part for each service
 .content-services {
   max-width: 500px;
   margin-top: 20px;
@@ -18,6 +19,9 @@
   .flex-right {
     max-height: 384px;
   }
+  .single-column-service {
+    min-height: 500px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -29,4 +33,39 @@
   .flex-right {
     max-height: 100%;
   }
+  .three-columns-services {
+    flex-direction: column;
+    .single-column-service {
+      min-height: 400px;
+    }
+  }
 }
+
+// Benefits part of each
+.three-columns-services {
+  display: flex;
+  align-items: center;
+  justify-content: inherit;
+  margin: 25px 0px;
+  .single-column-service {
+    max-width: 305px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    h4 strong {
+      font-size: 19px;
+    }
+    i {
+      color: $brand-color;
+      margin-bottom: 30px;
+    }
+    p {
+      margin-top: 10px;
+      font-weight: 400;
+      line-height: 1.9;
+      font-size: 15px;
+    }
+  }
+}
+
