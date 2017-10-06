@@ -27,8 +27,8 @@ Rails.application.routes.draw do
   end
 
   resource :about, only: [:show] do
-    resources :blogs, only: [:index]
-    get '/blog/:publishing_date', to: 'blogs#show'
+    resources :blog, only: [:index]
+    get '/blog/:publishing_date', to: 'blog#show'
     get 'contact', to: 'abouts#contact'
     get 'method', to: 'abouts#workmethod'
   end
