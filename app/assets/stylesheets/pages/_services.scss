@@ -1,4 +1,13 @@
-// Main part for each service
+// // Service show; overview
+.services-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 250px;
+  justify-content: space-around;
+}
+
+// Main part for each service[MVP,Sprints,workshops]
 .content-services {
   max-width: 500px;
   margin-top: 20px;
@@ -10,6 +19,30 @@
   align-items: flex-end;
 }
 
+.flex-left {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+}
+
+.right-service {
+  align-items: flex-end;
+  .right-content-service {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 16px;
+    line-height: 34px;
+    .first-paragraph {
+      font-weight: 700;
+    }
+    .second-paragraph {
+      font-weight: 400;
+    }
+  }
+}
 
 @media (min-width: 900px) {
   .image-services {
@@ -17,6 +50,9 @@
     max-height: 384px;
   }
   .flex-right {
+    max-height: 384px;
+  }
+  .flex-left {
     max-height: 384px;
   }
   .single-column-service {
@@ -32,6 +68,9 @@
   }
   .flex-right {
     max-height: 100%;
+  }
+  .flex-left {
+    max-height: 100%
   }
   .three-columns-services {
     flex-direction: column;
@@ -65,24 +104,6 @@
       font-weight: 400;
       line-height: 1.9;
       font-size: 15px;
-    }
-  }
-}
-
-.right-service {
-  align-items: flex-end;
-  .right-content-service {
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 16px;
-    line-height: 34px;
-    .first-paragraph {
-      font-weight: 700;
-    }
-    .second-paragraph {
-      font-weight: 400;
     }
   }
 }
