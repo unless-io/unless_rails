@@ -23,7 +23,7 @@
   }
 }
 
-.navbar-unless .navbar-group-right {
+.navbar-group-right {
   justify-content: space-between;
   align-items: center;
   font-size: 15px;
@@ -37,6 +37,9 @@
           text-decoration: none;
         }
       }
+    }
+    li.active {
+      font-weight: 700;
     }
   }
 }
@@ -70,9 +73,9 @@
   .navbar-group-right {
     ul {
       a {
-        color: $brand-color;
+        color: $gray;
         &:hover, &:focus, &:active, &:visited {
-          color: $brand-color;
+          color: $gray;
         }
       }
     }
