@@ -1,0 +1,19 @@
+<!-- secondary_nav_items is defined as an application helper -->
+
+<% if secondary_nav_items.has_key?(params[:controller]) %>
+
+<div class="secondary-navbar-unless">
+  <div class="navbar-group-right">
+    <ul class="list-inline">
+      <% secondary_nav_items[params[:controller]].each do |display_text, path| %>
+      
+      <li class="<%= 'active' if request.original_url == path %>">
+        <%= link_to display_text, path  %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<% end %>
+

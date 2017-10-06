@@ -1,0 +1,30 @@
+@media (max-width: 900px) {
+  .seconday-navbar-unless .navbar-group-right {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .seconday-navbar-unless .navbar-group-right {
+    display: flex;
+  }
+}
+
+
+.secondary-navbar-unless {
+  display: flex;
+  justify-content: flex-end;
+  .navbar-group-right {
+    width: 384.13px;
+    border-top: 1px solid $brand-color;
+    padding-top: 10px;
+    ul {
+      a {
+        color: $gray;
+        &:hover, &:focus, &:active, &:visited {
+          color: $gray;
+        }
+      }
+    }
+  }
+}
