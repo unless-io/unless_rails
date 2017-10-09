@@ -35,3 +35,17 @@
   }
 }
 
+.button-red-outline {
+  display: inline-block;
+  color: $brand-color;
+  background-color: transparent;
+  border: 1px solid $brand-color;
+  padding: 5px 17px;
+  font-weight: 600;
+  &:hover, &:focus, &:active, &:visited {
+    color: $brand-color;
+    text-decoration: none;
+  }
+}
+
+

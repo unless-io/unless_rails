@@ -1,0 +1,14 @@
+<div class="service-card">
+  <h3 class="header-gray">
+    <%= header %>
+  </h3>
+  <i class="fa fa-<%= fontawesome %>"></i>
+  <ul>
+    <% list.each do |list_item| %>
+      <li>
+        <%= list_item %>
+      </li>
+    <% end %>
+  </ul>
+  <%= link_to 'View more', button_path, class: 'button-red-outline' %>
+</div>
