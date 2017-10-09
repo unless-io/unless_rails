@@ -1,0 +1,29 @@
+.three-cards-container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+
+@media (max-width: 900px) {
+  .three-cards-container {
+    .service-card {
+      margin: 0 20px;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .three-cards-container {
+     .col-xs-4 {
+      &:first-child .service-card {
+        margin-right: 40px;
+      }
+      &:last-child .service-card {
+        margin-left: 40px;
+      }
+      &:nth-child(2) .service-card {
+        margin: 0 20px;
+      }
+    }
+  }
+}
