@@ -1,1 +1,26 @@
-this is about show
+<%= render partial: 'shared/image_banner', locals: { image: 'michele_fans.jpg', caption: 'Michèle and her fans'} %>
+
+<div class="text-banner">
+  <h2 class="header-gray">
+    Hello? Why am I here? What is my purpose in life?
+  </h2>
+  <p>
+    We love a challenge. Find us a group of people and a problem and we'll help you find, not only a great, but a beautiful solution. We love.
+  </p>
+</div>
+
+<%= render partial: 'shared/person_highlight', locals: { 
+  inverted: false,
+  name: "Michèle de Bruyn", 
+  image: 'michele.jpg',
+  description: "After studying Social Sciences Michèle decided she wanted something else entirely, applying for the first Le Wagon bootcamp in Amsterdam. Le Wagon instigated a profound change in Michèle and she welcomed the programmer lifestyle with open arms. Her love for programming rubbed off on those around her and she was swiftly invited to be the bootcamp manager for the second batch of Le Wagon in Amsterdam. After the batch ended she started working and living as a digital nomad, teaching in multiple countries and starting her entrepreneurial career with the company 'Unless'. Together with Lars Böhm they specialize in making and mentoring products for startups.",
+  email: 'michele@unless.io' 
+} %>
+
+<%= render partial: 'shared/person_highlight', locals: { 
+  inverted: true,
+  name: "Lars Böhm", 
+  image: 'lars.jpg',
+  description: "After receiving his Bachelors in Communication and Multimedia Design, Lars decided he wanted to add programming to his set of skills. He was a student in the first Amsterdam batch of Le Wagon. Lars can be described as a full-stack programmer, equally favouring back-end and front-end development. He also provides workshops and coaching in concept development. Currently he's active as a teacher & TA and as a founder of his company, Unless. Lars is determined to change the world, one cool idea at a time.",
+  email: 'lars@unless.io' 
+  } %>

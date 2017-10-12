@@ -1,4 +1,4 @@
-.three-cards-container {
+.three-cards-container.marged {
   margin-top: 60px;
   margin-bottom: 80px;
 }
@@ -6,23 +6,25 @@
 
 @media (max-width: 900px) {
   .three-cards-container {
-    .service-card {
-      margin: 0 20px;
+    .service-card, .simple-image-card {
+      margin-left: 20px;
+      margin-right: 20px;
     }
   }
 }
 
 @media (min-width: 900px) {
-  .three-cards-container {
+  .three-cards-container .row {
      .col-xs-4 {
-      &:first-child .service-card {
+      &:first-child .service-card, &:first-child .simple-image-card {
         margin-right: 40px;
       }
-      &:last-child .service-card {
+      &:last-child .service-card, &:last-child .simple-image-card {
         margin-left: 40px;
       }
-      &:nth-child(2) .service-card {
-        margin: 0 20px;
+      &:nth-child(2) .service-card, &:nth-child(2) .simple-image-card {
+        margin-left: 20px;
+        margin-right: 20px;
       }
     }
   }

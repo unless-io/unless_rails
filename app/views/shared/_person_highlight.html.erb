@@ -1,0 +1,14 @@
+<div class="person-highlight-card <%= 'inverted' if inverted %>">
+  <div class="card-image" style="background-image:url('<%= image_path image %>');"></div>
+  <div class="card-body">
+   <h3>
+     <%= name %>
+   </h3>
+   <p>
+     <%= description %>
+   </p>
+   <%= link_to "mailto:#{email}?subject=Hello%20#{name.split(" ").join("%20")}" do %>
+     <i class="fa fa-envelope"></i> <%= email %>
+   <% end %>
+ </div> 
+</div>
