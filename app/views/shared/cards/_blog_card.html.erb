@@ -1,0 +1,26 @@
+<div class="blog-card-wrapper">
+  <div class="card-image" style="background-image:url('<%= image_path image %>');">
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">
+      <%= title %>
+    </h2>
+    <div class="card-header">
+      <div class="author-image" style="background-image:url('<%= image_path author_image %>');"></div>
+      <div class="card-header-information">
+        <h3>
+          <%= author_name %>
+        </h3>
+        <span>
+          <%= publishing_date %>
+        </span>
+      </div>
+    </div>
+    <p>
+      <%= introduction %>
+    </p>
+    <%= link_to url, class: 'button-red', target: '_blank' do %>
+      Read more on Medium <i class="fa fa-medium"></i> 
+    <% end %>
+  </div>
+</div>

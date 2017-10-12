@@ -1,1 +1,23 @@
-this is blogs index
+<h2 class="header-gray">
+  Blog
+</h2>
+
+<%= render partial: "shared/cards/blog_card", locals: {
+  image: 'articles/article_1.jpeg',
+  title: "Programming not for you? Think again.",
+  author_name: "Michèle de Bruyn",
+  author_image: "michele.jpg",
+  publishing_date: "Dec 12, 2016",
+  url: "https://medium.com/unless-io/programming-not-for-you-think-again-ae578e3333b4",
+  introduction: "Trying to find a job after university and failing miserably, I was one of those people. I received my Bachelor’s degree in Social sciences in 2014, majoring in Medical Anthropology As you might imagine, enough jobs to pick from… "
+  } %>
+
+<%= render partial: "shared/cards/blog_card", locals: {
+  image: 'articles/article_2.jpeg',
+  title: "Hello world",
+  author_name: "Lars Böhm",
+  author_image: "lars.jpg",
+  publishing_date: "Dec 1, 2016",
+  url: "https://medium.com/unless-io/hello-world-caef796696fc",
+  introduction: "Having studied Communication and Multimedia Design, I often worked on projects where we developed websites. However I would always be in charge of design, content, user tests. Basically, I touched upon everything related to working in projects except for programming.… "
+  } %>
