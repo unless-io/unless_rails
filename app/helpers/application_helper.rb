@@ -28,11 +28,11 @@ module ApplicationHelper
         "Workshops" => workshops_services_url, 
         "Sprints" => sprints_services_url
       },
-    "portfolios" => 
-      {
-        "Projects" => portfolio_projects_url,
-        "Partnerships" => portfolio_partnerships_url
-      },
+    # "portfolios" => 
+    #   {
+    #     "Projects" => portfolio_projects_url,
+    #     "Partnerships" => portfolio_partnerships_url
+    #   },
     "abouts" => 
       {
         "Blog" => about_blog_index_url, 

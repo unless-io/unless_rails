@@ -19,7 +19,7 @@
       &:first-child .service-card, &:first-child .simple-image-card {
         margin-right: 40px;
       }
-      &:last-child .service-card, &:last-child .simple-image-card {
+      &:nth-child(3) .service-card, &:nth-child(3) .simple-image-card {
         margin-left: 40px;
       }
       &:nth-child(2) .service-card, &:nth-child(2) .simple-image-card {

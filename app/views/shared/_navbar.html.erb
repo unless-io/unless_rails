@@ -13,13 +13,13 @@
   <div class="navbar-group-right">
     <ul class="list-inline">
       <li class="<%= 'active' if params[:controller] == 'abouts' %>">
-        <%= link_to "About", about_path %>
+        <%= link_to "About", about_path, "data-target": "abouts", class: 'nav-item' %>
       </li>
       <li class="<%= 'active' if params[:controller] == 'services' %>">
-        <%= link_to "Services", services_path %>
+        <%= link_to "Services", services_path, "data-target": "services", class: 'nav-item' %>
       </li>
       <li class="<%= 'active' if params[:controller] == 'portfolios' %>">
-        <%= link_to "Portfolio", portfolio_path %>
+        <%= link_to "Portfolio", portfolio_path, class: 'nav-item' %>
       </li>
     </ul>
     <% if is_home? %>
