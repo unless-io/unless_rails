@@ -7,5 +7,9 @@
 @import "hidden_dropdown";
 @import "secondary_navbar";
 @import "text_banner";
-@import "service_card";
 @import "containers";
+@import "image_banner";
+@import "timeline";
+
+// Import subfolders
+@import "cards/index";

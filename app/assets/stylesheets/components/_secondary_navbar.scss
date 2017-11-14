@@ -15,7 +15,8 @@
   display: flex;
   justify-content: flex-end;
   .navbar-group-right {
-    width: 384.13px;
+    width: 433.52px;
+    min-height: 32px;
     border-top: 1px solid $brand-color;
     padding-top: 10px;
     ul {
@@ -23,6 +24,7 @@
         color: $gray;
         &:hover, &:focus, &:active, &:visited {
           color: $gray;
+          font-weight: 700;
         }
       }
     }

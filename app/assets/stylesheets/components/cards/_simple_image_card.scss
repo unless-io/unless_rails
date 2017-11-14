@@ -1,0 +1,27 @@
+.simple-image-card {
+  display: block;
+  text-align: left;
+  width: 80%;
+  color: $gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .simple-image {
+    width: 100%;
+    height: 160px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  &:hover, &:visited, &:active, &:focus {
+    text-decoration: none;
+    color: $gray;
+  }
+}
+
+.simple-image.border {
+  border: 1px solid $lightest-gray;
+}

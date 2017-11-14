@@ -22,7 +22,7 @@ Rails.application.routes.draw do
 
   resource :portfolio, only: [:show] do
     resources :projects, only: [:index]
-    get '/projects/:title', to: 'projects#show'
+    get '/projects/:title', to: 'projects#show', as: :project
     resources :partnerships, only: [:index]
   end
 

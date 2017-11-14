@@ -1,3 +1,5 @@
+// FOR HOME PAGE
+
 @media (max-width: 900px) {
   .two-columns {
     grid-template-rows: 50% 50%;
@@ -48,4 +50,92 @@
   font-weight: 700;
   color: white;
 }
+
+// FOR PROJECT SHOW PAGE
+.content-container {
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    margin-bottom: 40px;
+    .breadcrumbs {
+      font-size: 15px;
+      a {
+        color: $gray;
+      }
+    }
+    h2 {
+      font-family: Arvo;
+      color: $brand-color;
+    }
+  }
+  .two-columns-higher {
+    display: flex;
+    .right, .left {
+      flex: 0 0 50%;
+    }
+    .left {
+      img {
+        width: 100%;
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      p {
+        width: 80%;
+        text-align: right;
+        font-size: 16px;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .content-container {
+    .breadcrumbs {
+      display: none;
+    }
+    .title {
+      h2 {
+        margin-top: 0;
+        color: $gray;
+      }
+    }
+    .two-columns-higher {
+      flex-direction: column;
+      .left {
+        img {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .content-container {
+    .two-columns-higher {
+      flex-direction: row;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

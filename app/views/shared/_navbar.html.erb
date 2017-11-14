@@ -13,19 +13,19 @@
   <div class="navbar-group-right">
     <ul class="list-inline">
       <li class="<%= 'active' if params[:controller] == 'abouts' %>">
-        <%= link_to "About", about_path %>
+        <%= link_to "About", about_path, "data-target": "abouts", class: 'nav-item' %>
       </li>
       <li class="<%= 'active' if params[:controller] == 'services' %>">
-        <%= link_to "Services", services_path %>
+        <%= link_to "Services", services_path, "data-target": "services", class: 'nav-item' %>
       </li>
       <li class="<%= 'active' if params[:controller] == 'portfolios' %>">
-        <%= link_to "Portfolio", portfolio_path %>
+        <%= link_to "Portfolio", portfolio_path, class: 'nav-item' %>
       </li>
     </ul>
     <% if is_home? %>
-      <%= link_to "Get in touch", contact_about_path, class: 'button-white' %>
+      <%= link_to "Get in touch", "#{about_path}#contact", class: 'button-white' %>
     <% else %>
-      <%= link_to "Get in touch", contact_about_path, class: 'button-red' %>
+      <%= link_to "Get in touch", "#{about_path}#contact", class: 'button-red' %>
     <% end %>
   </div>
 <%= render partial: 'shared/hidden_dropdown' %>

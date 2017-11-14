@@ -4,14 +4,25 @@
 
 <div class="secondary-navbar-unless">
   <div class="navbar-group-right">
-    <ul class="list-inline">
+    <ul class="default list-inline-flex" id="<%= params[:controller] %>">
       <% secondary_nav_items[params[:controller]].each do |display_text, path| %>
-      
       <li class="<%= 'active' if request.original_url == path %>">
         <%= link_to display_text, path  %>
       </li>
       <% end %>
     </ul>
+
+    <% other_nav_items = secondary_nav_items.except(params[:controller]) %>
+    <% other_nav_items.each do |group, sub_items| %>
+      <ul class="list-inline-flex hidden" id="<%= group %>">
+        <% sub_items.each do |display_text, path| %>
+          <li class="<%= 'active' if request.original_url == path %>">
+            <%= link_to display_text, path  %>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
+    <ul class="hidden empty-list"></ul>
   </div>
 </div>
 

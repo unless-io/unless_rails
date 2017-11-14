@@ -1,0 +1,28 @@
+<div class="three-cards-container">
+  <h2 class="header-gray">
+    Projects
+  </h2>
+  <!-- TODO CHANGE ITERATOR FROM ALWAYS 10 TO LISTEN TO 'LIMIT' VARIABLE -->
+  <% YAML.load(File.open("#{Rails.root}/db/data/projects.yml")).each_slice(3) do |slice| %>
+  <div class="row">
+    <% slice.each do |project| %>
+    <div class="col-xs-4">
+      <%= link_to project_portfolio_path(project["url"]), class: "simple-image-card border" do %>
+      <%= render partial: 'shared/cards/simple_image_card', locals: {
+        item: project,
+        type: 'project',
+        image_style: 'cover',
+        text_align: 'left'
+      } %>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+  <% end %>
+  <% feature_on = true %>
+  <% unless request.original_url == portfolio_projects_url || feature_on %>
+  <div class="button-right">
+    <%= link_to 'See more projects', portfolio_projects_path, class: 'button-red'  %>
+  </div>
+  <% end %>
+</div>
