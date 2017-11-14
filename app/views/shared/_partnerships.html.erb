@@ -3,17 +3,18 @@
     Partners
   </h2>
   <!-- TODO CHANGE ITERATOR FROM ALWAYS 10 TO LISTEN TO 'LIMIT' VARIABLE -->
-  <% (0..3).to_a.each_slice(3) do |slice| %>
+  <% YAML.load(File.open("#{Rails.root}/db/data/partnerships.yml")).to_a.each_slice(3) do |slice| %>
   <div class="row">
-    <% slice.each do |item| %>
+    <% slice.each do |partnership| %>
     <div class="col-xs-4">
-      <%= render partial: 'shared/cards/simple_image_card', locals: {
-        title: 'Le Wagon',
-        image: 'partners/lewagon.png',
-        image_style: 'contain',
-        border: false,
-        text_align: 'center'
-      } %>
+      <div class="simple-image-card">
+        <%= render partial: 'shared/cards/simple_image_card', locals: {
+          item: partnership,
+          type: 'partnership',
+          image_style: 'contain',
+          text_align: 'center'
+        } %>
+      </div>
     </div>
     <% end %>
   </div>

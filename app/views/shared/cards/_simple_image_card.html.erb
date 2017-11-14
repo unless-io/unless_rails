@@ -1,7 +1,5 @@
 <!-- TODO CHANGE THE LINK HERE TO AN ACTUAL ONE ONCE THAT WORKS -->
-<%= link_to "#", class: "simple-image-card #{'border' if border}" do %>
-<div class="simple-image" style="background-image:url('<%= image_path image %>');background-size:<%= image_style %>;"></div>
+<div class="simple-image" style="background-image:url('<%= image_path item["image"] %>');background-size:<%= image_style %>;"></div>
   <h3 class="text-<%= text_align %>">
-    <%= title %>
+    <%= item["title"] %>
   </h3>
-<% end %>

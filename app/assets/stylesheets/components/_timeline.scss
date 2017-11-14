@@ -1,0 +1,198 @@
+// Variables
+//------------------------------------------------------
+$timeline-division-background-color:      $light-gray !default;
+$timeline-years-background-color:         $gray !default;
+$timeline-years-color:                    white !default;
+$timeline-dotted-color:                   $brand-color !default;
+$timeline-dotted-border-color:            $lightest-gray !default;
+
+$timeline-radius:                         4px !default;
+
+
+  /**
+   * timeline
+   * --------------------------------------------------
+   */
+
+   .timeline {
+    margin-bottom: 50px;
+    & dl {
+      position: relative;
+      top: 0;
+      margin: 0;
+      padding: 20px 0;
+
+      &:before {
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       left: 50%;
+       margin-left: -1px;
+       width: 2px;
+       content: '';
+       background-color: $timeline-division-background-color;
+       z-index: 100;
+     }
+
+     & dt {
+       position: relative;
+       top: 30px;
+       padding: 3px 5px;
+       margin: 0 auto 30px;
+       text-align: center;
+       border-radius: $timeline-radius;
+       background-color: $timeline-years-background-color;
+       font-weight: normal;
+       color: $timeline-years-color;
+       width: 120px;
+       z-index: 200;
+     }
+
+     & dd {
+       position: relative;
+       z-index: 200;
+       & .circ {
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        margin-left: -20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $brand-color;
+        // Check on desktop
+        text-align: center;
+        padding-top: 6px;
+        color: white;
+        z-index: 200;
+      }
+
+      & .time {
+        position: absolute;
+        top: 31px;
+        left: 50%;
+        padding: 10px 20px;
+        width: 100px;
+        display: inline-block;
+        color: $timeline-dotted-color;
+      }
+
+      & .events {
+        position: relative;
+        margin-top: 31px;
+        padding: 10px 10px 0;
+        border-radius: $timeline-radius;
+        // background-color: white;
+        width: 47%;
+
+        &:before {
+          position: absolute;
+          top: 12px;
+          width: 0;
+          height: 0;
+          content: '';
+          border-width: 6px;
+          border-style: solid;
+        }
+
+        & .events-object {
+         margin-right: 10px;
+       }
+
+       & .events-body {
+         overflow: hidden;
+         zoom: 1;
+         margin-left: 40px;
+         border: solid $brand-color 3px;
+         padding: 10px 15px;
+         p {
+          margin-bottom: 0;
+        }
+
+
+        & .events-heading {
+          margin: 0 0 10px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &.pos-right {
+      min-height: 140px;
+
+      & .time {
+       margin-left: -100px;
+       text-align: right;
+     }
+     & .events {
+       float: right;
+
+       &:before {
+        left: -12px;
+        border-color: transparent white transparent transparent;
+      }
+    }
+  }
+  &.pos-left {
+    min-height: 140px;
+    & .time {
+     margin-left: 0;
+     text-align: left;
+   }
+   & .events {
+     float: left;
+     &:before {
+      right: -12px;
+      border-color: transparent transparent transparent white;
+    }
+  }
+}
+}
+}
+}
+@media screen and (max-width: 767px) {
+  .timeline dl {
+   &:before {
+    left: 60px;
+  }
+  & dt {
+    margin: 0 0 30px;
+  }
+  & dd {
+    & .circ {
+     left: 60px;
+   }
+   & .time {
+     left: 0;
+   }
+   &.pos-left {
+     & .time {
+      margin-left: 0;
+      padding: 10px 0;
+      text-align: left;
+    }
+    & .events {
+      float: right;
+      width: 84%;
+      &:before {
+       left: -12px;
+       border-color: transparent white transparent transparent;
+     }
+   }
+ }
+ &.pos-right {
+   & .time {
+    margin-left: 0;
+    padding: 10px 0;
+    text-align: left;
+  }
+  & .events {
+    float: right;
+    width: 84%;
+  }
+}
+}
+}
+}
+
+

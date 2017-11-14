@@ -1,7 +1,7 @@
 <div class="two-columns">
   <div class="left">
     <p class="big-quote">
-      <%= set_header(@left, 'header-left') %>
+      Build it and they will come
     </p>
   </div>
 
@@ -9,12 +9,12 @@
   <div class="right font-white">
     <div class="right-content right-content-small">
       <p class="first-paragraph">
-        <%= set_text_area(@right, 'main-1') %>
+        We're going to get straight to the point; we like to build stuff. What kind of stuff? Places where people can connect, where they can gather. Places where people can find what they're looking for.
       </p>
       <p class="second-paragraph">
-        <%= set_text_area(@right, 'main-2') %>
+        We love a challenge. Find us a group of people and a problem and we'll help you find, not only a great, but a beautiful solution.
       </p>
-      <%= link_to "Say hi", contact_about_path, class: 'button-white-outline' %>
+      <%= link_to "Say hi", "#{about_path}#contact", class: 'button-white-outline' %>
     </div>
   </div>
 </div>
