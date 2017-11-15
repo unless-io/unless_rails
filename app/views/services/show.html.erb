@@ -1,15 +1,19 @@
-<%= render partial: 'shared/text_banner', locals: {
-  header: "Cool idea? Ready to tackle it?",
-  content:
-  "We love a challenge. Find us a group of people and a problem and we'll help you find, not only a great, but a beautiful solution. We love.",
-  button: {
-    display_text: 'Request a quote',
-    path: contact_path
-  }
+<% content_for(:sidebar) do %>
+<%= render partial: 'shared/sidebar', locals: {
+  sidebar_items: @sidebar_items
 } %>
-
-
-
+<% end %>
+<div id="overview">
+  <%= render partial: 'shared/text_banner', locals: {
+    header: "Cool idea? Ready to tackle it?",
+    content:
+    "We love a challenge. Find us a group of people and a problem and we'll help you find, not only a great, but a beautiful solution. We love.",
+    button: {
+      display_text: 'Request a quote',
+      path: contact_path
+    }
+  } %>
+</div>
 <div class="three-cards-container marged">
   <div class="row">
     <div class="col-xs-4">
@@ -23,41 +27,41 @@
           "Idea creation",
           "Idea creation"
           ],
-        button_path: sprints_services_path
-      } %>
-    </div>
-    <div class="col-xs-4">
-      <%= render partial: 'shared/cards/service_card', locals: {
-        header: 'Sprints',
-        fontawesome: 'sitemap',
-        list: [
-          "Idea creation",
-          "Up to 5 days",
-          "Rapid prototyping",
-          "Idea creation",
-          "Idea creation"
-          ],
-        button_path: sprints_services_path
-      } %>
-    </div>
-    <div class="col-xs-4">
-      <%= render partial: 'shared/cards/service_card', locals: {
-        header: 'Sprints',
-        fontawesome: 'sitemap',
-        list: [
-          "Idea creation",
-          "Up to 5 days",
-          "Rapid prototyping",
-          "Idea creation",
-          "Idea creation"
-          ],
-        button_path: sprints_services_path
-      } %>
-    </div>
-  </div>
-</div>
+          button_path: sprints_services_path
+        } %>
+      </div>
+      <div class="col-xs-4">
+        <%= render partial: 'shared/cards/service_card', locals: {
+          header: 'Sprints',
+          fontawesome: 'sitemap',
+          list: [
+            "Idea creation",
+            "Up to 5 days",
+            "Rapid prototyping",
+            "Idea creation",
+            "Idea creation"
+            ],
+            button_path: sprints_services_path
+          } %>
+        </div>
+        <div class="col-xs-4">
+          <%= render partial: 'shared/cards/service_card', locals: {
+            header: 'Sprints',
+            fontawesome: 'sitemap',
+            list: [
+              "Idea creation",
+              "Up to 5 days",
+              "Rapid prototyping",
+              "Idea creation",
+              "Idea creation"
+              ],
+              button_path: sprints_services_path
+            } %>
+          </div>
+        </div>
+      </div>
 
-<%= render partial: 'mvp' %>
-<%= render partial: 'sprints' %>
-<%= render partial: 'workshops' %>
+      <%= render partial: 'mvp' %>
+      <%= render partial: 'sprints' %>
+      <%= render partial: 'workshops' %>
 

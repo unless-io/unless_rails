@@ -1,0 +1,11 @@
+<div class="sidebar">
+  <ul>
+    <% sidebar_items.each do |sidebar_item| %>
+    <li>
+      <%= link_to "##{sidebar_item}" do %>
+      <i class="fa fa-circle-thin"></i>
+      <% end %>
+    </li>
+    <% end %>
+  </ul>
+</div>
