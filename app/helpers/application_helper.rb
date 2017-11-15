@@ -22,39 +22,39 @@ module ApplicationHelper
 
   def secondary_nav_items
     {
-    "services" => 
+    "services" =>
       {
-        "MVP" => mvp_services_url, 
-        "Workshops" => workshops_services_url, 
+        "MVP" => mvp_services_url,
+        "Workshops" => workshops_services_url,
         "Sprints" => sprints_services_url
       },
-    # "portfolios" => 
+    # "portfolios" =>
     #   {
     #     "Projects" => portfolio_projects_url,
     #     "Partnerships" => portfolio_partnerships_url
     #   },
-    "abouts" => 
+    "abouts" =>
       {
-        "Blog" => about_blog_index_url, 
-        "Method" => method_about_url, 
-        "Contact" => contact_about_url
+        "Blog" => about_blog_index_url,
+        "Method" => method_about_url,
+        "Contact" => contact_url
       },
-      "projects" => 
+      "projects" =>
       {
         "Projects" => portfolio_projects_url,
         "Partnerships" => portfolio_partnerships_url
       },
-      "partnerships" => 
+      "partnerships" =>
       {
         "Projects" => portfolio_projects_url,
         "Partnerships" => portfolio_partnerships_url
       },
-      "blog" => 
+      "blog" =>
       {
-        "Blog" => about_blog_index_url, 
-        "Method" => method_about_url, 
-        "Contact" => contact_about_url
+        "Blog" => about_blog_index_url,
+        "Method" => method_about_url,
+        "Contact" => contact_url
       }
-    } 
+    }
   end
 end

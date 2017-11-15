@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
 
   root to: 'pages#home'
-
+  get '/contact', to: 'pages#contact'
   resource :services, only: [:show] do
     get 'mvp', to: 'services#mvp'
     get 'workshops', to: 'services#workshops'
@@ -29,7 +29,6 @@ Rails.application.routes.draw do
   resource :about, only: [:show] do
     resources :blog, only: [:index]
     get '/blog/:publishing_date', to: 'blog#show'
-    get 'contact', to: 'abouts#contact'
     get 'method', to: 'abouts#workmethod'
   end
 
