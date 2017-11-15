@@ -1,45 +1,31 @@
 <h3 class="header-catalyze">
   Workflow
 </h3>
-
-<% data = [
-  {
-    number: 0, 
-    title: "hello world", 
-    content: "blablabla"
-    },
-  {
-    number: 1, 
-    title: "goodbye world", 
-    content: "hohohoho"
-  }
-  ] %>
-
 <div class="timeline">
   <dl>
     <dt>Semaines</dt>
-    <% data.each_with_index do |timeline_item, index| %>
+    <% YAML.load(File.open("#{Rails.root}/db/data/workmethod.yml")).each.with_index do |timeline_item, index| %>
     <% if index.even? %>
     <dd class="pos-right clearfix">
-      <div class="circ"><%= timeline_item[:number] %></div>
+      <div class="circ"><%= timeline_item["number"] %></div>
       <div class="events">
         <div class="events-body">
-          <% unless timeline_item[:title] == "" %>
-          <h4 class="events-heading"><%= timeline_item[:title] %></h4>
+          <% unless timeline_item["title"] == "" %>
+          <h4 class="events-heading"><%= timeline_item["title"] %></h4>
           <% end %>
-          <%= simple_format timeline_item[:content] %>
+          <%= simple_format timeline_item["content"] %>
         </div>
       </div>
     </dd>
     <% else %>
     <dd class="pos-left clearfix">
-      <div class="circ"><%= timeline_item[:number] %></div>
+      <div class="circ"><%= timeline_item["number"] %></div>
       <div class="events">
         <div class="events-body">
-          <% unless timeline_item[:title] == "" %>
-            <h4 class="events-heading"><%= timeline_item[:title] %></h4>
+          <% unless timeline_item["title"] == "" %>
+            <h4 class="events-heading"><%= timeline_item["title"] %></h4>
           <% end %>
-          <%= simple_format timeline_item[:content] %>
+          <%= simple_format timeline_item["content"] %>
         </div>
       </div>
     </dd>
