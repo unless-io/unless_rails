@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get '/contact', to: 'pages#contact'
   resource :services, only: [:show] do
     get 'mvp', to: 'services#mvp'
-    get 'workshops', to: 'services#workshops'
+    get 'digitalconsulting', to: 'services#digitalconsulting'
     get 'sprints', to: 'services#sprints'
   end
 

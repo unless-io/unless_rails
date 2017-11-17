@@ -7,7 +7,7 @@ class ServicesController < ApplicationController
   def mvp
   end
 
-  def workshops
+  def digitalconsulting
   end
 
   def sprints

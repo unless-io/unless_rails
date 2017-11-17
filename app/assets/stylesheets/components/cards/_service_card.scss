@@ -2,6 +2,7 @@
   background-color: $lightest-gray;
   text-align: center;
   padding: 25px 0;
+  box-shadow: 2px 2px 4px rgba(1,1,1,0.3);
   h3 {
     margin-top: 0;
   }
@@ -19,7 +20,7 @@
       margin: 20px 0;
     }
     li::before {
-      content: "○"; 
+      content: "○";
       color: $brand-color;
       margin-right: 10px;
     }
