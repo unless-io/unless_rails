@@ -1,3 +1,21 @@
-<div class="contact">
-  This is about contact
+<div class="contact-form">
+  <h2>Hello, is it me you’re looking for?</h2>
+  <p>If you are looking for me, or us, fill out this form and we pinky promise that we will get back to you within the day. Feel free to email, facebook message or tweet, instead of filling out this pretty form. We also like all of those things. </p>
+  <form action="https://formspree.io/info@unless.io"
+      method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="John Smith" class="form-control">
+      </div>
+       <div class="form-group" id="bottom-input-left">
+        <label for="email">Email:</label>
+        <input type="email" name="_replyto" id="email" placeholder="johnsmith@google.com" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="message">Your message to us:</label>
+        <textarea type="text" name="message" id="message" placeholder="We would like to ask you about .. " class="form-control"></textarea>
+      </div>
+
+     <input type="submit" value="Send">
+</form>
 </div>
