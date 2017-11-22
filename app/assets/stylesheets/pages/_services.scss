@@ -81,7 +81,7 @@
 .three-columns-services {
   display: flex;
   align-items: center;
-  justify-content: inherit;
+  justify-content: space-between;
   margin: 25px 0px;
   .single-column-service {
     max-width: 305px;

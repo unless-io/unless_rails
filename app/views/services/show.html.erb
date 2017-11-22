@@ -1,8 +1,8 @@
-<% content_for(:sidebar) do %>
-<%= render partial: 'shared/sidebar', locals: {
+<%# content_for(:sidebar) do %>
+<%#= render partial: 'shared/sidebar', locals: {
   sidebar_items: @sidebar_items
 } %>
-<% end %>
+<%# end %>
 
 <div id="overview" class="margin-top image-banner-with-text" style="  background-image: url(https://media.giphy.com/media/3t9vvI7AdzBuM/giphy.gif),linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2));
 ">
@@ -18,54 +18,20 @@
 </div>
 
 
-<div class="three-cards-container marged">
-  <div class="row">
-    <div class="col-xs-4">
-      <%= render partial: 'shared/cards/service_card', locals: {
-        header: 'Sprints',
-        fontawesome: 'sitemap',
-        list: [
-          "Idea creation",
-          "Up to 5 days",
-          "Rapid prototyping",
-          "Idea creation",
-          "Idea creation"
-          ],
-          button_path: sprints_services_path
-        } %>
-      </div>
-      <div class="col-xs-4">
-        <%= render partial: 'shared/cards/service_card', locals: {
-          header: 'MVP',
-          fontawesome: 'rocket',
-          list: [
-            "Idea creation",
-            "Up to 5 days",
-            "Rapid prototyping",
-            "Idea creation",
-            "Idea creation"
-            ],
-            button_path: sprints_services_path
-          } %>
-        </div>
-        <div class="col-xs-4">
-          <%= render partial: 'shared/cards/service_card', locals: {
-            header: 'Digital Consulting',
-            fontawesome: 'handshake-o',
-            list: [
-              "Idea creation",
-              "Up to 5 days",
-              "Rapid prototyping",
-              "Idea creation",
-              "Idea creation"
-              ],
-              button_path: digitalconsulting_services_path
-            } %>
-          </div>
-        </div>
-      </div>
+<div class="tabs">
+  <a href="#" class="tab active" data-target="wortel">Wortel</a>
+  <a href="#" class="tab" data-target="hamburger">Hamburger</a>
+  <a href="#" class="tab" data-target="tosti">Tosti</a>
+</div>
 
-      <%= render partial: 'mvp' %>
-      <%= render partial: 'sprints' %>
-      <%= render partial: 'digitalconsulting' %>
+<div class="tab-content" id="wortel">
+  <%= render partial: 'mvp' %>
+</div>
 
+<div class="tab-content hidden" id="hamburger">
+  <%= render partial: 'sprints' %>
+</div>
+
+<div class="tab-content hidden" id="tosti">
+  <%= render partial: 'digitalconsulting' %>
+</div>
