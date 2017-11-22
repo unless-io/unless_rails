@@ -13,12 +13,17 @@
   .contact-form-group {
     margin-bottom: 30px;
     // width: 90%;
-    input[type=text], textarea {
+    input[type=text], textarea[name=message]{
       opacity: 0.7;
       border: 2px solid white;
     }
-    textarea {
+    textarea[name=message] {
       min-height: 220px;
+      resize: none;
+    }
+    .bottom-line {
+      height: 6px;
+      background-color: white;
     }
   }
   .label-checkbox p {
@@ -31,8 +36,6 @@
     padding: 6px 12px;
     font-size: 20px;
     color: $dark-gray;
-    border-bottom: 1px solid #ccc;
-    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   }
 }
 
