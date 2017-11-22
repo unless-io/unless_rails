@@ -1,21 +1,61 @@
 <div class="contact-form">
-  <h2>Hello, is it me you’re looking for?</h2>
-  <p>If you are looking for me, or us, fill out this form and we pinky promise that we will get back to you within the day. Feel free to email, facebook message or tweet, instead of filling out this pretty form. We also like all of those things. </p>
+  <h2 class="margin-bottom">
+    Hello, is it me you’re looking for?
+  </h2>
+  <p class="margin-bottom">
+    If you are looking for me, or us, fill out this form and we pinky promise that we will get back to you within the day. Feel free to email, facebook message or tweet, instead of filling out this pretty form. We also like all of those things.
+  </p>
   <form action="https://formspree.io/info@unless.io"
-      method="POST">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" placeholder="John Smith" class="form-control">
+  method="POST">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <div class="contact-form-group">
+        <label for="name">Name:<span>*</span></label>
+        <input type="text" name="name" id="name" class="form-block" required>
       </div>
-       <div class="form-group" id="bottom-input-left">
-        <label for="email">Email:</label>
-        <input type="email" name="_replyto" id="email" placeholder="johnsmith@google.com" class="form-control">
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="contact-form-group" id="bottom-input-left">
+        <label for="email">Email:<span>*</span></label>
+        <input type="text" name="_replyto" id="email" class="form-block" required>
       </div>
-      <div class="form-group">
-        <label for="message">Your message to us:</label>
-        <textarea type="text" name="message" id="message" placeholder="We would like to ask you about .. " class="form-control"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <div class="contact-form-group" id="bottom-input-left">
+        <label for="phone">Phone number:<span>*</span></label>
+        <input type="text" name="phone" id="phone" class="form-block" required>
       </div>
-
-     <input type="submit" value="Send">
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="contact-form-group" id="bottom-input-left">
+        <label for="animal">Spirit animal:</label>
+        <input type="text" name="animal" id="animal" class="form-block">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="contact-form-group">
+        <label for="message">Your message to us:<span>*</span></label>
+        <textarea type="text" name="message" id="message" class="form-block" required>
+        </textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="checkbox">
+        <div class="label-checkbox">
+          <p>News letter enthousiast?</p>
+          <p>Want our shower thougts?</p>
+        </div>
+        <input type="radio" name="newsletter" value="yes"> yes
+        <input type="radio" name="newsletter" value="no"> no
+      </div>
+    </div>
+  </div>
+  <input type="submit" value="Contact us" class="button-white-outline">
 </form>
 </div>
