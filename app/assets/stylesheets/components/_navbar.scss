@@ -76,6 +76,12 @@
 }
 
 .navbar-unless-regular {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 20px 90px;
+  background-color: white;
+  z-index: 999;
   .logo {
     color: $brand-color;
     &:hover, &:focus, &:active, &:visited {

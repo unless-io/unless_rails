@@ -1,7 +1,13 @@
 .text-banner {
   text-align: center;
+  padding: 0px 90px;
+  // Write media query for padding
   p {
     margin: 40px 0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  }
+  h2 {
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   }
   .button-red {
     font-size: 15px;

@@ -23,9 +23,9 @@
       </li>
     </ul>
     <% if is_home? %>
-      <%= link_to "Get in touch", "#{about_path}#contact", class: 'button-white' %>
+      <%= link_to "Get in touch", contact_path, class: 'button-white' %>
     <% else %>
-      <%= link_to "Get in touch", "#{about_path}#contact", class: 'button-red' %>
+      <%= link_to "Get in touch", contact_path, class: 'button-red' %>
     <% end %>
   </div>
 <%= render partial: 'shared/hidden_dropdown' %>
