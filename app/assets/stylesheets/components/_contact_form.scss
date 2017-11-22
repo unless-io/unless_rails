@@ -12,10 +12,10 @@
   }
   .contact-form-group {
     margin-bottom: 30px;
-    // width: 90%;
     input[type=text], textarea[name=message]{
-      opacity: 0.7;
-      border: 2px solid white;
+      background-color: rgba(255, 255, 255, 0.4);
+      border: 0px solid white;
+      color: white;
     }
     textarea[name=message] {
       min-height: 220px;
