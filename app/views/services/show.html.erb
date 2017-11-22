@@ -6,32 +6,45 @@
 
 <div id="overview" class="margin-top image-banner-with-text" style="  background-image: url(https://media.giphy.com/media/3t9vvI7AdzBuM/giphy.gif),linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2));
 ">
-  <%= render partial: 'shared/text_banner', locals: {
-    header: "Cool idea? Ready to tackle it?",
-    content:
-    "We are an agency that is specialized in creating MVP's and everything that goes with it. Through our experience we are also available to organise design sprints, specified workshops and give digital consulting. So if you are starting business, we can help you start and get on the right track. And for current businesses, let us help you take it to the next level.",
-    button: {
-      display_text: "Let's talk",
-      path: contact_path
-    }
-  } %>
+<%= render partial: 'shared/text_banner', locals: {
+  header: "Cool idea? Ready to tackle it?",
+  content:
+  "We are an agency that is specialized in creating MVP's and everything that goes with it. Through our experience we are also available to organise design sprints, specified workshops and give digital consulting. So if you are starting business, we can help you start and get on the right track. And for current businesses, let us help you take it to the next level.",
+  button: {
+    display_text: "Let's talk",
+    path: contact_path
+  }
+} %>
 </div>
-
-
 <div class="tabs">
-  <a href="#" class="tab active" data-target="wortel">Wortel</a>
-  <a href="#" class="tab" data-target="hamburger">Hamburger</a>
-  <a href="#" class="tab" data-target="tosti">Tosti</a>
+  <a href="#" class="tab active" data-target="mvp">
+    <h3>
+      MVP
+    </h3>
+  </a>
+  <a href="#" class="tab" data-target="sprints">
+    <h3>
+      Sprints
+    </h3>
+  </a>
+  <a href="#" class="tab" data-target="consulting">
+    <h3>
+      Digital Consulting
+    </h3>
+  </a>
 </div>
 
-<div class="tab-content" id="wortel">
+
+
+
+<div class="tab-content" id="mvp">
   <%= render partial: 'mvp' %>
 </div>
 
-<div class="tab-content hidden" id="hamburger">
+<div class="tab-content hidden" id="sprints">
   <%= render partial: 'sprints' %>
 </div>
 
-<div class="tab-content hidden" id="tosti">
+<div class="tab-content hidden" id="consulting">
   <%= render partial: 'digitalconsulting' %>
 </div>
