@@ -1,8 +1,22 @@
+
+@media (max-width: 900px) {
+     .tabs {
+       width: 100%;
+    }
+
+}
+@media (min-width: 901px) {
+     .tabs {
+       width: 60%;
+    }
+
+}
+
 .tabs {
   display: flex;
   padding: 10px 10px 0 10px;
   justify-content: space-around;
-  width: 60%;
+  // width: 60%;
   margin: 20px auto;
 }
 .tabs a {
