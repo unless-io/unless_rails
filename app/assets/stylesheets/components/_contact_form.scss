@@ -40,6 +40,29 @@
     font-size: 20px;
     color: $dark-gray;
   }
+  input[type="radio"]:checked+label {
+    // Set yes to this as well by default
+    border: 2px solid white;
+    padding: 4px 12px;
+    font-weight: bold;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  .radiobuttons label {
+    width: 60px;
+    height: 37px;
+  }
+  .checkbox {
+    display: flex;
+    .radiobuttons {
+      width: 200px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+    }
+  }
 }
 
 input:focus,
