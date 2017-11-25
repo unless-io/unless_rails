@@ -26,6 +26,9 @@
       background-color: white;
     }
   }
+  input[type=radio]  {
+    display: none;
+  }
   .label-checkbox p {
     font-weight: 800;
   }
