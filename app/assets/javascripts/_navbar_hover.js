@@ -3,21 +3,21 @@ if (document.querySelector('.secondary-navbar-unless') != null) {
 }
 
 function secondaryNavbarHover() {
-  const navItems = document.querySelectorAll(".nav-item");
-  navItems.forEach((navItem) => {
+  var navItems = document.querySelectorAll(".nav-item");
+  navItems.forEach(function(navItem) {
     console.log(navItem)
     if (navItem != null) {
-      navItem.addEventListener("mouseenter", (event) => {
-        const target = document.getElementById(event.currentTarget.dataset.target)
+      navItem.addEventListener("mouseenter", function(event) {
+        var target = document.getElementById(event.currentTarget.dataset.target)
         if (target != null) {
           highlightOne(true, target);
         } else {
-          const placeholder = document.querySelector('.empty-list')
+          var placeholder = document.querySelector('.empty-list')
           highlightOne(true, placeholder);
         }
       });
     }
-    document.querySelector('.navbar-wrapper').addEventListener("mouseleave", (event) => {
+    document.querySelector('.navbar-wrapper').addEventListener("mouseleave", function(event) {
       highlightOne(false, document.querySelector('.secondary-navbar-unless .default'));
     });
   });
@@ -26,7 +26,7 @@ function secondaryNavbarHover() {
 function highlightOne(transition, activeItem) {
   ulInSecondNavbar = document.querySelectorAll(".secondary-navbar-unless .navbar-group-right ul")
   if (ulInSecondNavbar != null) {
-    ulInSecondNavbar.forEach((ul) => {
+    ulInSecondNavbar.forEach(function(ul) {
       ul.classList.add("hidden")
     });
     if (activeItem != null) {
