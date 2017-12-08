@@ -1,6 +1,6 @@
-<div class="navbar-unless <%= is_home? ? 'navbar-unless-inverted' : 'navbar-unless-regular' %>">
+<div class="navbar-unless <%= is_home_or_contact? ? 'navbar-unless-inverted' : 'navbar-unless-regular' %>">
   <%= link_to root_path, class: "logo" do %>
-  <% if is_home? %>
+  <% if is_home_or_contact? %>
     <%= image_tag 'unless_icon_white.svg' %>
   <% else %>
     <%= image_tag 'unless_icon_red.svg' %>
@@ -22,7 +22,7 @@
         <%= link_to "Portfolio", portfolio_path, class: 'nav-item' %>
       </li>
     </ul>
-    <% if is_home? %>
+    <% if is_home_or_contact? %>
       <%= link_to "Get in touch", contact_path, class: 'button-white' %>
     <% else %>
       <%= link_to "Get in touch", contact_path, class: 'button-red' %>

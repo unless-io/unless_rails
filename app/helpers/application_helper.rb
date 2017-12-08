@@ -15,7 +15,7 @@ module ApplicationHelper
     Page.find_by(identifier: identifier)
   end
 
-  def is_home?
-    return true if params[:controller] == 'pages' && params[:action] == 'home'
+  def is_home_or_contact?
+    return true if (params[:controller] == 'pages' && params[:action] == 'home') || (params[:controller] == 'pages' && params[:action] == 'contact')
   end
 end

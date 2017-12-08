@@ -29,10 +29,26 @@
   border: 1px solid white;
   padding: 5px 17px;
   font-weight: 600;
+  border-radius: 0px;
   &:hover, &:focus, &:active, &:visited {
     color: white;
     text-decoration: none;
   }
+}
+
+.button-bigger {
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.tiny-square-button {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  border: 2px solid white;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .button-red-outline {
