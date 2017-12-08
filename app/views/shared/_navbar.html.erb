@@ -1,9 +1,9 @@
 <div class="navbar-unless <%= is_home_or_contact? ? 'navbar-unless-inverted' : 'navbar-unless-regular' %>">
   <%= link_to root_path, class: "logo" do %>
   <% if is_home_or_contact? %>
-    <%= image_tag 'unless_icon_white.svg' %>
+  <%= image_tag 'unless_icon_white.svg' %>
   <% else %>
-    <%= image_tag 'unless_icon_red.svg' %>
+  <%= image_tag 'unless_icon_red.svg' %>
   <% end %>
   <span>
     Unless
@@ -23,10 +23,23 @@
       </li>
     </ul>
     <% if is_home_or_contact? %>
-      <%= link_to "Get in touch", contact_path, class: 'button-white' %>
+    <%= link_to "Get in touch", contact_path, class: 'button-white' %>
     <% else %>
-      <%= link_to "Get in touch", contact_path, class: 'button-red' %>
+    <%= link_to "Get in touch", contact_path, class: 'button-red' %>
     <% end %>
   </div>
-<%= render partial: 'shared/hidden_dropdown' %>
+  <%#= render partial: 'shared/hidden_dropdown' %>
+  <div class="visible-xs nav-mobile">
+    <ul class="list-inline">
+      <li>
+        <%= link_to "About", about_path, "data-target": "abouts", class: 'nav-item' %>
+      </li>
+      <li>
+        <%= link_to "Services", services_path, "data-target": "services", class: 'nav-item' %>
+      </li>
+      <li>
+        <%= link_to "Portfolio", portfolio_path, class: 'nav-item' %>
+      </li>
+    </ul>
+  </div>
 </div>

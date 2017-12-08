@@ -1,8 +1,3 @@
-
-.navbar-wrapper {
-  height: 100px;
-}
-
 .navbar-unless {
   display: flex;
   justify-content: space-between;
@@ -79,7 +74,6 @@
   position: fixed;
   left: 0;
   right: 0;
-  padding: 20px 90px;
   background-color: white;
   z-index: 999;
   .logo {
@@ -102,18 +96,28 @@
 
 @media (max-width: 900px) {
   .navbar-wrapper {
-    min-height: 142px;
+    min-height: 165px;
     margin-bottom: 0;
   }
 
   .navbar-unless .navbar-group-right {
     display: none;
   }
+  .navbar-unless {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 900px) {
+    .navbar-wrapper {
+    min-height: 142px;
+    margin-bottom: 0;
+  }
   .navbar-unless .navbar-group-right {
     display: flex;
+  }
+  .navbar-unless-regular {
+    padding: 20px 90px;
   }
 }
 
@@ -125,5 +129,16 @@ ul.list-inline-flex {
   li {
     flex: 0 0 110px;
     text-align: center;
+  }
+}
+
+.nav-mobile {
+  margin-top: 15px;
+  a {
+    color: $brand-color;
+    &:hover {
+      color: $brand-color;
+      text-decoration: none;
+    }
   }
 }
