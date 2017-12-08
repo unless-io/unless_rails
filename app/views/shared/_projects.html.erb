@@ -19,10 +19,5 @@
     <% end %>
   </div>
   <% end %>
-  <% feature_on = true %>
-  <% unless request.original_url == project_portfolio_url || feature_on %>
-  <div class="button-right">
-    <%= link_to 'See more projects', project_portfolio_path, class: 'button-red'  %>
-  </div>
-  <% end %>
+
 </div>
