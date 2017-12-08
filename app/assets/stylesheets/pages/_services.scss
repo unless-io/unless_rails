@@ -55,9 +55,6 @@
   .flex-left {
     max-height: 384px;
   }
-  .single-column-service {
-    min-height: 500px;
-  }
 }
 
 @media (max-width: 900px) {
@@ -84,7 +81,7 @@
 .three-columns-services {
   display: flex;
   align-items: center;
-  justify-content: inherit;
+  justify-content: space-between;
   margin: 25px 0px;
   .single-column-service {
     max-width: 305px;

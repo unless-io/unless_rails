@@ -11,9 +11,9 @@
 <body class="<%= params[:controller] %>-<%= params[:action] %>">
   <div class="<%= 'navbar-wrapper' unless params[:controller] == 'pages' && params[:action] == 'home' %>">
     <%= render 'shared/navbar' %>
-    <% render 'shared/secondary_navbar' %>
   </div>
   <%= render 'shared/flashes' %>
+  <%= yield(:sidebar) %>
   <%= yield %>
   <%= render 'shared/footer' %>
   <%= javascript_include_tag 'application' %>

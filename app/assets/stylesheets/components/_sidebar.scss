@@ -1,0 +1,13 @@
+.sidebar ul {
+  position: fixed;
+  right: 0;
+  height: 100px;
+  top: calc(50vh - 100px);
+  width: 75px;
+  z-index: 1000;
+  list-style: none;
+  margin-right: 5px;
+  li i {
+    color: $brand-color;
+  }
+}

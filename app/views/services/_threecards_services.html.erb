@@ -1,0 +1,49 @@
+<div class="three-cards-container marged">
+  <div class="row">
+    <div class="col-xs-4">
+      <%= render partial: 'shared/cards/service_card', locals: {
+        header: 'Sprints',
+        fontawesome: 'sitemap',
+        list: [
+          "Quick decisionmaking",
+          "Testing with users",
+          "Rapid prototyping",
+          "Google's concept",
+          "Idea creation",
+          "Validating choices"
+          ],
+          button_path: sprints_services_path
+        } %>
+      </div>
+      <div class="col-xs-4">
+        <%= render partial: 'shared/cards/service_card', locals: {
+          header: 'MVP',
+          fontawesome: 'rocket',
+          list: [
+            "Accelerated learning",
+            "Establish priorities",
+            "Start small, grow big",
+            "Iterative progress",
+            "Continuous user testing",
+            "Early user involvement"
+            ],
+            button_path: sprints_services_path
+          } %>
+        </div>
+        <div class="col-xs-4">
+          <%= render partial: 'shared/cards/service_card', locals: {
+            header: 'Digital Consulting',
+            fontawesome: 'handshake-o',
+            list: [
+              "Expert advice",
+              "Roadmap creation",
+              "Entrepeneurial feedback",
+              "Structure",
+              "Regular checkups",
+              "Network access"
+              ],
+              button_path: digitalconsulting_services_path
+            } %>
+          </div>
+        </div>
+      </div>
