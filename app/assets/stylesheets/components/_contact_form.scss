@@ -20,6 +20,9 @@
     textarea[name=message] {
       min-height: 220px;
       resize: none;
+      &::placeholder {
+        color: rgba(255,255,255,0.8);
+      }
     }
     .bottom-line {
       height: 6px;
@@ -28,9 +31,13 @@
   }
   input[type=radio]  {
     display: none;
+    border: 1px solid $brand-color;
   }
-  .label-checkbox p {
-    font-weight: 800;
+  .label-checkbox {
+    margin-right: 20px;
+    p {
+      font-weight: 800;
+    }
   }
   .form-block {
     display: block;
@@ -52,12 +59,11 @@
   .radiobuttons label {
     width: 60px;
     height: 37px;
+    margin: 0 10px;
   }
   .checkbox {
     display: flex;
     .radiobuttons {
-      width: 200px;
-      height: 100px;
       display: flex;
       justify-content: center;
       align-items: baseline;
@@ -70,4 +76,38 @@ select:focus,
 textarea:focus,
 button:focus {
   outline: none;
+}
+
+.newsletter-form {
+  display: flex;
+  input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 0px solid white;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 18px;
+    &::placeholder {
+      color: rgba(255,255,255,0.8);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .newsletter-form {
+    flex-direction: column;
+    .button-white-outline {
+       margin-top: 15px;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .newsletter-form {
+    .button-white-outline {
+      margin-left: 10px;
+    }
+  }
 }

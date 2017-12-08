@@ -36,6 +36,21 @@
   }
 }
 
+.button-bigger {
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.tiny-square-button {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  border: 2px solid white;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
 .button-red-outline {
   display: inline-block;
   color: $brand-color;

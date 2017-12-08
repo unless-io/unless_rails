@@ -3,6 +3,9 @@
 .pages-home, .pages-contact {
   background-image: linear-gradient(120deg, #f73859 0%, #fc856b 100%);
   background-repeat: no-repeat;
+  a {
+    color: white;
+  }
 }
 
 .right {

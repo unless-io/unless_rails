@@ -5,66 +5,83 @@
   <p class="margin-bottom">
     If you are looking for me, or us, fill out this form and we pinky promise that we will get back to you within the day. Feel free to email, facebook message or tweet, instead of filling out this pretty form. We also like all of those things.
   </p>
-  <form action="https://formspree.io/info@unless.io"
-  method="POST">
-  <div class="row">
-    <div class="col-xs-12 col-md-6">
-      <div class="contact-form-group">
-        <label for="name">Name:<span>*</span></label>
-        <input type="text" name="name" id="name" class="form-block" required>
-        <div class="bottom-line"></div>
+  <div class="container-custom">
+    <div class="row">
+      <div class="col-xs-12 col-lg-6">
+        <%= render partial: "contact_form" %>
       </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <div class="contact-form-group" id="bottom-input-left">
-        <label for="email">Email:<span>*</span></label>
-        <input type="text" name="_replyto" id="email" class="form-block" required>
-        <div class="bottom-line"></div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 col-md-6">
-      <div class="contact-form-group" id="bottom-input-left">
-        <label for="phone">Phone number:<span>*</span></label>
-        <input type="text" name="phone" id="phone" class="form-block" required>
-        <div class="bottom-line"></div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <div class="contact-form-group" id="bottom-input-left">
-        <label for="animal">Spirit animal:</label>
-        <input type="text" name="animal" id="animal" class="form-block">
-        <div class="bottom-line"></div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="contact-form-group">
-        <label for="message">Your message to us:<span>*</span></label>
-        <textarea type="text" name="message" id="message" class="form-block" required>
-        </textarea>
-        <div class="bottom-line"></div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 col-xs-6">
-      <div class="checkbox">
-        <div class="label-checkbox">
-          <p>News letter enthousiast?</p>
-          <p>Want our shower thougts?</p>
-        </div>
-        <div class="radiobuttons">
-        <input id="radio-yes" class="checkable checked" type="radio" name="newsletter" value="yes" >
-        <label for="radio-yes">Yes</label>
-        <input id="radio-no" class="checkable" type="radio" name="newsletter" value="no">
-        <label for="radio-no">No</label>
+      <div class="col-xs-12 col-lg-6">
+        <div class="map-data-layout">
+          <div id="map" class="map"></div>
+          <div class="data-below">
+            <div class="data-left">
+              <h3>
+                Unless
+              </h3>
+              <p>
+                A Lab
+                <br>
+                Overhoeksplein 2
+                <br>
+                1031 KS Amsterdam
+                <br>
+                <a href="mailto:info@unless.io">info@unless.io</a>
+                <br>
+                <a href="tel:+31654357746">+316 543 577 46</a>
+              </p>
+            </div>
+            <div class="data-right">
+              <h4>
+                Subscribe to our newsletter
+              </h4>
+              <form action="#" method="POST" class="newsletter-form">
+                <input type="hidden" name="u" value="9f5b9fc31b27c4677d13faf36">
+                <input type="hidden" name="id" value="0370a4154a">
+                <div class="group">
+                  <input type="text" name="EMAIL" class="text-input" id="input-newsletter" placeholder="Your email">
+                  <div class="bottom-line"></div>
+                </div>
+                <input type="submit" value="Subscribe" id="submit-newsletter" class="button-white-outline">
+              </form>
+              <div class="social-media-links">
+                <%= link_to "facebook.com", class: "tiny-square-button" do %>
+                  <i class="fa fa-facebook"></i>
+                <% end %>
+                <%= link_to "facebook.com", class: "tiny-square-button" do %>
+                  <i class="fa fa-twitter"></i>
+                <% end %>
+                <%= link_to "facebook.com", class: "tiny-square-button" do %>
+                  <i class="fa fa-behance"></i>
+                <% end %>
+                <%= link_to "facebook.com", class: "tiny-square-button" do %>
+                  <i class="fa fa-linkedin"></i>
+                <% end %>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <input type="submit" value="Contact us" class="button-white-outline">
-</form>
 </div>
+
+<% content_for(:js) do %>
+<script>
+  function initMap() {
+    var uluru = {lat: 52.384169, lng: 4.903128};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_API_BROWSER_KEY'] %>&callback=initMap">
+</script>
+<% end %>
+
+
