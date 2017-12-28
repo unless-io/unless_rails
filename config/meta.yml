@@ -1,0 +1,7 @@
+# config/meta.yml
+
+meta_product_name: "Unless"
+meta_title: "Unless - Helping people create"
+meta_description: "We like to build stuff. What kind of stuff? Places where people can connect, where they can gather. Places where people can find what they're looking for."
+meta_image: "banner.png"                        # should exist in `app/assets/images/`
+twitter_account: "@unless_io"                   # required for Twitter Cards

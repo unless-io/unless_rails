@@ -1,2 +1,5 @@
+<% content_for :meta_title, "#{DEFAULT_META["meta_product_name"]} | Portfolio & Partners" %>
+
+
 <%= render partial: 'shared/projects', locals: { limit: 9 } %>
 <%= render partial: 'shared/partnerships', locals: { limit: 9 } %>
