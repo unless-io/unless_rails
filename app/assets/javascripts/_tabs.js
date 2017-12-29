@@ -8,6 +8,7 @@ tabs.forEach(function(tab) {
     var target = event.currentTarget.dataset.target
     clearTabContents()
     document.getElementById(target).classList.remove('hidden')
+    gtag('event', target);
   clearTabs()
   tab.classList.add('active')
   })
