@@ -32,13 +32,20 @@
   <div class="visible-xs nav-mobile">
     <ul class="list-inline">
       <li>
-        <%= link_to "About", about_path, "data-target": "abouts", class: 'nav-item' %>
+        <%= link_to "About", about_path, "data-target": "abouts", class: "nav-item#{' active' if params[:controller] == "abouts"}" %>
       </li>
       <li>
-        <%= link_to "Services", services_path, "data-target": "services", class: 'nav-item' %>
+        <%= link_to "Services", services_path, "data-target": "services", class: "nav-item#{' active' if params[:controller] == "services"}" %>
       </li>
       <li>
-        <%= link_to "Portfolio", portfolio_path, class: 'nav-item' %>
+        <%= link_to "Portfolio", portfolio_path, class: "nav-item #{' active' if params[:controller] == "portfolios"}" %>
+      </li>
+      <li>
+        <% if is_home_or_contact? %>
+          <%= link_to "Contact", contact_path, class: "contact-nav-item-inverted #{' active' if params[:controller] == "pages" && params[:action] == "contact"}" %>
+        <% else %>
+          <%= link_to "Contact", contact_path, class: "contact-nav-item #{' active' if params[:controller] == "pages" && params[:action] == "contact"}" %>
+        <% end %>
       </li>
     </ul>
   </div>
