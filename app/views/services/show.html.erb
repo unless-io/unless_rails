@@ -1,11 +1,14 @@
+<% content_for :meta_title, "#{DEFAULT_META["meta_product_name"]} | Services" %>
+
+
 <% introduction_text =
 "
 We are an agency that is specialized in creating MVP's and everything that goes with it. Through our experience we are also available to organise design sprints, specified workshops and give digital consulting. So if you are starting business, we can help you start and get on the right track. And for current businesses, let us help you take it to the next level.
 "
 %>
 
-<div id="overview" class="image-banner-with-text hidden-xs" style="  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<%= image_path 'charles-sprint.jpg' %>);">
-  <%= render partial: 'shared/text_banner', locals: {
+<!-- <div id="overview" class="image-banner-with-text hidden-xs" style="  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<%= image_path 'charles-sprint.jpg' %>);"> -->
+  <%#= render partial: 'shared/text_banner', locals: {
     header: "Cool idea? Ready to tackle it?",
     content:introduction_text,
     button: {
@@ -13,7 +16,7 @@ We are an agency that is specialized in creating MVP's and everything that goes 
       path: contact_path
     }
   } %>
-</div>
+<!-- </div> -->
 
 
 <div class="tabs">
