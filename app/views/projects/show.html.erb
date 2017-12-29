@@ -6,11 +6,16 @@
     <div class="breadcrumbs">
       <%= link_to "Portfolio", portfolio_path %> > <%= @project["title"] %>
     </div>
-    <h2>
-      <%= @project["title"] %>
-    </h2>
+    <div class="title-content">
+      <h2>
+        <%= @project["title"] %>
+      </h2>
+      <p>
+        <%= @project["tags"] %>
+      </p>
+    </div>
   </div>
-  <div class="two-columns-higher padding-top">
+  <div class="two-columns-higher">
     <div class="left">
       <%= image_tag @project["image"] %>
     </div>
