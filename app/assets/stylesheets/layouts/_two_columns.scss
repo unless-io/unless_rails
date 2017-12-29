@@ -105,6 +105,7 @@
       display: none;
     }
     .title {
+      justify-content: flex-end;
       h2 {
         margin-top: 0;
         color: $gray;
