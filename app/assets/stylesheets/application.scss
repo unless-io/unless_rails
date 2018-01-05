@@ -31,8 +31,16 @@ body {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   body {
     padding: 0 90px;
   }
 }
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+

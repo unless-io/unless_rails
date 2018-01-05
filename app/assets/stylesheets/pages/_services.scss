@@ -47,20 +47,18 @@
 @media (min-width: 900px) {
   .image-services {
     max-width: 560px;
-    max-height: 384px;
   }
-  .flex-right {
-    max-height: 384px;
-  }
-  .flex-left {
-    max-height: 384px;
-  }
+  // .flex-right {
+  //   max-height: 384px;
+  // }
+  // .flex-left {
+  //   max-height: 384px;
+  // }
 }
 
 @media (max-width: 900px) {
   .image-services {
     max-width: 560px;
-    max-height: 225px;
     margin-top: 30px;
   }
   .flex-right {
