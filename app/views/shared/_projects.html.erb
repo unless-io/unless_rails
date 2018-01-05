@@ -6,7 +6,7 @@
   <% YAML.load(File.open("#{Rails.root}/db/data/projects.yml")).each_slice(3) do |slice| %>
   <div class="row">
     <% slice.each do |project| %>
-    <div class="col-xs-12 col-lg-4">
+    <div class="col-xs-12 col-md-4">
       <%= link_to project_portfolio_path(project["url"]), class: "simple-image-card border" do %>
       <%= render partial: 'shared/cards/simple_image_card', locals: {
         item: project,
