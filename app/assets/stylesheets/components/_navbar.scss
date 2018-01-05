@@ -5,6 +5,21 @@
   padding-top: 50px;
 }
 
+@media (min-width: 1200px) {
+  .navbar-unless {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .navbar-wrapper {
+    min-height: 142px;
+    margin-bottom: 0;
+  }
+  .navbar-unless .navbar-group-right {
+    display: flex;
+  }
+}
+
 .navbar-unless .logo {
   display: flex;
   align-items: center;
@@ -70,6 +85,7 @@
   }
 }
 
+
 .navbar-unless-regular {
   position: fixed;
   left: 0;
@@ -108,7 +124,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .navbar-wrapper {
     min-height: 142px;
     margin-bottom: 0;
