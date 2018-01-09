@@ -1,5 +1,15 @@
 <!-- TODO CHANGE THE LINK HERE TO AN ACTUAL ONE ONCE THAT WORKS -->
-<div class="simple-image" style="background-image:url('<%= image_path item["image"] %>');background-size:<%= image_style %>;"></div>
+<div class="simple-image <%= image_size %>" style="background-image:url('<%= image_path item["image"] %>');background-size:<%= image_style %>;"></div>
+<div class="description">
+  <p>
+    <%= item["tagline"] %>
+  </p>
+  <div class="title-and-button">
   <h3 class="text-<%= text_align %>">
     <%= item["title"] %>
   </h3>
+  <% if button %>
+    <button><i class="fa fa-arrow-right"></i></button>
+  <% end %>
+  </div>
+</div>

@@ -7,12 +7,14 @@
   <div class="row">
     <% slice.each do |partnership| %>
     <div class="col-xs-12 col-md-4">
-      <div class="simple-image-card">
+      <div class="simple-image-card low">
         <%= render partial: 'shared/cards/simple_image_card', locals: {
           item: partnership,
           type: 'partnership',
           image_style: 'contain',
-          text_align: 'center'
+          text_align: 'center',
+          button: false,
+          image_size: 'small'
         } %>
       </div>
     </div>

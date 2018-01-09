@@ -7,12 +7,14 @@
   <div class="row">
     <% slice.each do |project| %>
     <div class="col-xs-12 col-md-4">
-      <%= link_to project_portfolio_path(project["url"]), class: "simple-image-card border" do %>
+      <%= link_to project_portfolio_path(project["url"]), class: "simple-image-card high" do %>
       <%= render partial: 'shared/cards/simple_image_card', locals: {
         item: project,
         type: 'project',
         image_style: 'cover',
-        text_align: 'left'
+        text_align: 'left',
+        button: true,
+        image_size: 'large'
       } %>
       <% end %>
     </div>
