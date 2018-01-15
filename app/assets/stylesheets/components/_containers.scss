@@ -15,16 +15,13 @@
 
 @media (min-width: 900px) {
   .three-cards-container .row {
-     .col-xs-4 {
-      &:first-child .service-card, &:first-child .simple-image-card {
-        margin-right: 40px;
-      }
+     .col-md-4 {
       &:nth-child(3) .service-card, &:nth-child(3) .simple-image-card {
-        margin-left: 40px;
+        margin-left: auto;
       }
       &:nth-child(2) .service-card, &:nth-child(2) .simple-image-card {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }

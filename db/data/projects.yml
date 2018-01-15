@@ -1,54 +1,63 @@
 - url: "jouw-stek"
   title: "Jouw Stek"
   image: "projects/jouwstek.png"
+  tagline: "Share your backyard, make the city greener"
   tags: Design, Development, Conceptual creation
   description: >
     <strong>Een kwart van de Nederlanders kent z'n buren nauwelijks. Hoe zit dat bij jou?</strong><br> Jouw Stek zorgt voor onverwachte ontmoetingen in buurten. En wat is nou een betere ontmoetingsplek dan in de tuin? Een tuin geeft namelijk een kijkje in iemands leven. In Amsterdam heeft helaas niet iedereen een tuin en worden de wachtlijsten voor volkstuinen langer en langer. Door jouw stek open te stellen, creëer je voor jezelf én een ander een super fijne plek om van te genieten. Bovendien maak je zo de stad een stukje groener! <br> <br> <strong> Mijn stek wordt ook jouw stek</strong><br> Met Jouw Stek zet je je tuinhek open voor een buurtgenoot zonder tuin, maar wel met hele groene vingers. Amsterdammers die wel wat handjes in de tuin kunnen gebruiken vanwege weinig tijd, kennis of kracht brengen wij in contact met tuinloze bewoners die dolgraag in de aarde wroeten. Door jouw stek te delen, ontmoet je mensen in je buurt en ligt jouw tuin straks vol kleurrijke bloemen of zelfgekweekte groenten en fruit. Je deelt je tuin dus met een ander!
 - url: "chicken"
   title: "Chicken"
   image: "projects/chicken.png"
+  tagline: "Do the things you love to do and challenge others to do them too"
   tags: Design, Development, Conceptual creation
   description: >
     <strong>Do you also hate newyears resolutions?</strong><br> News year’s eve  horror. Its the time of the year again to start promissing that this time you will really get fit and run that 10k you have said you will for the past 3 years. No more excuses. You start off, the first three weeks are okay, and than there is Ben .. and Jerry and they are your new friends. And your life crumbles, as well as your body. Next year will be better you say, but why wait until next year? <br><br><strong> Chicken will help you create your new habit whenever you want to get started. </strong><br> You can start a new challenge for yourself and while you are doing it, challenge a friend. You bet that for the next month, you will run 3 hours every week, and  put 50 euro’s on the promise that you will make it. Your friend accepts the challenge. And every week you clock your hours to keep the promis.  The one that doesn’t make it, needs to cough up the 50 bucks. How is that for a challenge?
 - url: "garagebot"
   title: "Garagebot"
   image: "projects/garagebot.png"
+  tagline: "Automated questionaire service, how are you today?"
   tags: Design, Development, Conceptual creation
   description: >
     <strong>Doing the same repetitive task is never fun. </strong><br> Garage2020 is an innovation workplace. They are looking for innovation and solutions in the Dutch youth health care services. By creating the Garagebot together, they have found another innovative way in their current workflow.<br><br><strong> Garagebot helps out youth workers with their repetitive questionaires. </strong><br> Youth workers in the Netherlands need to keep track of how their clients are doing. They do this for instance by asking a weekly questionaire where they can see the process of their client. Garagebotis a chatbot that asks these questionaires for hem and makes it feel like more fun than work, while at the same time making it easier for the youth workers. They free up more time to spend on in-depth sessions with their clients.
 - url: "odysseeproductions"
   title: "Odyssee Productions"
   image: "projects/odyssee.png"
+  tagline: "Documentary project about the influence of economic crisis on the Greek art scene"
   tags: Design, Development, Conceptual creation
   description: >
     <strong>Why do things alone if you can do them together?</strong><br>  Odyssee productions is a collective consisting of journalists, graphic designers, cinematographers and musicians all trying to reach the same goal: create beautiful documentaries that will shake up the world on topics that were unkown to them before.<br><br><strong> Being open and participatory is what their core values are. </strong><br> Odyssee productions is something that can be defined as a real collective. It’s about creating together. At the moment they are working on a documentary on the current art scene in Athens. Feel free to contact them if you belong in one of the categories and want to participate.
 - url: "catalyze"
   title: "Catalyze"
   image: "projects/catalyze.png"
+  tagline: "Small investments with big influence"
   tags: Development, Coaching
   description: >
     <strong>Does participating in real estate sound scary to you? </strong> Catalyze makes that  easy for you. It’s  a platform where people willing to create a micro loan and real estate developers can meet. It’s like a kickstarter for real estate. And they are taking over the world. <br><br><strong> Why not invest in real estate if you can? </strong><br> Real estate is one of the most stable  funds to invest in. But if you are not a millionaire, it’s  almost impossible to invest, seeing most real estate developers don’t accept the money from your piggy bank. Catalyze bridges this gap and gives you the chance to invest too.  And it gives the real estate developers the chance to come up with the investments more quickly and get started on creating something beautiful.
 - url: "yuno"
   title: "Yuno"
   image: "projects/yuno.png"
+  tagline: "Breathe more, stress less"
   tags: Digital Consulting, Conceptual creation, Design sprints
   description: >
     <strong>Do you also feel stressed on a daily basis? </strong> Feeling stressed seems to be a standard state of being in our daily lives. We run around at work, run from work to home and back. And outside of work, there are so many factors that create stress. It’s just tiring. Well imagine you are working in a stressful environment helping stressed out youth on a daily basis.<br><br><strong> Yuno helps you realize your state of stress and gives you tools to deal with it. </strong><br> It is currently created for youth workers in closed off youth units. They work with kids that are forced to be there because of a lot of bad situations. Yuno will take a next step after the youth workers by giving this tool to the youth itself. If they get aware of how stressed they are, they can actively try to cope with it.
 - url: "automaat"
   title: "Automaat"
   image: "projects/automaat.png"
+  tagline: "Automated cryptocurrency trading bot, the Automaat keeps going!"
   tags: Design, Development, Conceptual creation
   description: >
     <strong>You know what's cool? Digital currencies.</strong> After developing a casual interest we decided to team up with <a href="https://github.com/olliesenduk">Ollie Senduk</a> to see if we could build something awesome. We noticed that there was a huge amount of open data available within online crypto communities and marketplaces. The result of our private hackathon is Automaat.<br><br><strong>Automaat is a fully automated cryptocurrency trading bot:</strong> Deploying several strategies and trading small amounts, we're currently testing and improving features. Besides figuring out the right strategy it's also been a lot of fun visualizing the data our bot is generating. Stay tuned for more at <a href="http://automaat.space/">www.automaat.space</a>
 - url: "epiclist"
   title: "Epiclist"
   image: "projects/epiclist.png"
+  tagline: "I read this great book the other day, you're going to love it."
   tags: Design, Development, Conceptual creation
   description: >
     <strong>Books, books and more books.</strong> We love books, we love reading and we love sharing our love of reading. That's why we created Epiclist, making it easier to share the books you love the most. Pick a book, add it to your list and sort them based on your personal preferences. Whenever you meet someone new and want to share your enthusiasm, just give them your Epiclist and you're all set. <br><br><strong>Interested?</strong> We're currently conducting a closed beta, drop us a line at <a href="mailto:info@unless.io">info@unless.io</a>. Or have a look at <a href="http://epicl.ist/">www.epicl.ist</a>.
 - url: "verken"
   title: "Verken"
   image: "projects/verken.png"
+  tagline: "Tough choices made easier."
   tags: Design, Development, Conceptual creation
   description: >
     <strong>Choices are hard. But we believe that people are fundamentally logic-driven.</strong> With Verken we aim to improve the decision making process for the bigger choices in life. Buying a house maybe? Or a car. Just input your criteria. Things like size, cost, colour. Whatever you think is valuable in determining the best fit for you. The next step is to evaluate each of your options based on these criteria, the result is the objective best-fit based on the things you value.<br><br><strong>We're looking to test the concept with people who are experiencing a dilemma of choice, is that you?</strong> Send us a message at <a href="mailto:info@unless.io">info@unless.io</a>
