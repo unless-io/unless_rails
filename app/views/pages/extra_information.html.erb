@@ -1,0 +1,101 @@
+
+<h2>
+  Pricing indication
+</h2>
+
+<div class="two-columns-emphasis-left">
+  <div class="left">
+    <div class="pricing-cards-grid">
+      <div class="pricing-card">
+        <h3>
+          Landing page
+        </h3>
+        <p class="starting-at">
+          Starting at
+        </p>
+        <div class="price-wrapper">
+          <p class="euro">
+            €
+          </p>
+          <p class="price">
+            1.200
+          </p>
+        </div>
+        <p class="duration">
+          Including SEO and analytics setup
+        </p>
+      </div>
+
+      <div class="pricing-card">
+        <h3>
+          Digital platform
+        </h3>
+        <p class="starting-at">
+          Starting at
+        </p>
+        <div class="price-wrapper">
+          <p class="euro">
+            €
+          </p>
+          <p class="price">
+            3.200
+          </p>
+        </div>
+        <p class="duration">
+          Including deployment and first month hosting
+        </p>
+      </div>
+
+      <div class="pricing-card">
+        <h3>
+          Design sprints
+        </h3>
+        <p class="starting-at">
+          Starting at
+        </p>
+        <div class="price-wrapper">
+          <p class="euro">
+            €
+          </p>
+          <p class="price">
+            500
+          </p>
+        </div>
+        <p class="duration">
+          per day (depending on team size & location)
+        </p>
+      </div>
+
+      <div class="explanation">
+        <p>
+          Contact us and we'll talk about your <strong>requirements, wishes and expectations.</strong> We'll give you our feedback and provide you with a more accurate prediction <strong>free of charge</strong>. 
+        </p>
+        <p>
+          Any question? Don't hesitate to ask us on our <%= link_to "contact page", contact_path %> or send us an email at <%= mail_to "info@unless.io", "info@unless.io" %>.
+        </p>
+      </div>
+      <%= link_to portfolio_path, class: "call-to-action" do %>
+      <div class="content">
+        <h3>
+          See our past projects
+        </h3>
+        <p>
+          <i class="fa fa-arrow-right fa-2x"></i>
+        </p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="right-content right-content-small">
+      <h2>
+        Want more information?
+      </h2>
+      <p>
+        Send us your contact information and we'll get back to you.
+      </p>
+      <%= link_to "Get in touch", contact_path, class: 'button-red' %>
+    </div>
+  </div>
+</div>

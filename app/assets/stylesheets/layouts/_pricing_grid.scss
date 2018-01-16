@@ -1,0 +1,115 @@
+@media (max-width: 900px) {
+  .pricing-cards-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr 0.5fr;
+    grid-template-columns: 100%;
+    height: 100%;
+    .explanation {
+      grid-row: 4 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .call-to-action {
+      grid-row: 5 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .pricing-card {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .explanation, .call-to-action {
+      min-height: 100px;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .pricing-cards-grid {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    height: 100%;
+    grid-template-columns: 33% 33% 33%;
+    .explanation {
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 2;
+    }
+    .call-to-action {
+      grid-row: 2 / span 1;
+      grid-column: 3 / span 1;
+    }
+    .explanation, .call-to-action {
+      min-height: 150px;
+    }
+  }
+}
+
+
+
+.pricing-cards-grid {
+  .explanation {
+    border: 1px solid #eaeaea;
+    padding: 25px;
+    margin: 0 10px;
+    margin-top: 10px;
+  }
+  .call-to-action {
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    margin: 0 10px;
+    margin-top: 10px;
+    background-color: $brand-color;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    h3 {
+      margin: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.pricing-card {
+  border: 1px solid #eaeaea;
+  padding: 17px 10px;
+  margin: 0 10px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .price-wrapper {
+    display: flex;
+    max-width: 150px;
+    margin: 20px auto;
+    .euro {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-right: 5px;
+    }
+    .price {
+      line-height: 40px;
+      font-weight: 800;
+      font-size: 40px;
+      flex: 1 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+  }
+  .duration {
+    font-size: 10px;
+    margin-left: 22px;
+  }
+}
+

@@ -102,9 +102,9 @@ button:focus {
   .newsletter-form {
     flex-direction: column;
     .button-white-outline {
-       margin-top: 15px;
-    }
-  }
+     margin-top: 15px;
+   }
+ }
 }
 
 @media (min-width: 900px) {
@@ -112,5 +112,11 @@ button:focus {
     .button-white-outline {
       margin-left: 10px;
     }
+  }
+}
+
+.simple-contact-form {
+  input[type="email"] {
+    padding: 4px;
   }
 }
