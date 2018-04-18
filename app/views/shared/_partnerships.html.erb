@@ -1,6 +1,6 @@
 <div class="three-cards-container">
   <h2 class="header-gray">
-    Companies we worked with
+    Companies we've worked with
   </h2>
   <!-- TODO CHANGE ITERATOR FROM ALWAYS 10 TO LISTEN TO 'LIMIT' VARIABLE -->
   <% YAML.load(File.open("#{Rails.root}/db/data/partnerships.yml")).to_a.each_slice(3) do |slice| %>

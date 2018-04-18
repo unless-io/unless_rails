@@ -1,11 +1,21 @@
-- url: "b-amsterdam"
-  title: "B. Amsterdam"
-  image: "partners/b-logo.png"
+- url: "lewagon"
+  title: "Le Wagon"
+  image: "partners/lewagon.png"
   description: >
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, tenetur sunt molestias obcaecati dolor cum ab atque, sequi expedita ad rerum, animi error a odio? Nobis facere impedit quam, fugiat voluptatum dolores asperiores at? Minus vitae perferendis at dignissimos odio, quaerat magni illo non, delectus officia, cum necessitatibus accusantium. Voluptas delectus eaque rem at obcaecati incidunt, reiciendis nesciunt itaque tenetur dolor magni quibusdam. Odio neque sint maiores distinctio molestias reprehenderit ducimus veniam sequi quisquam expedita incidunt praesentium, natus maxime tempore impedit dolorum. Natus voluptatem excepturi quisquam dolorum, itaque veniam dolorem at, saepe non! Nemo, officiis suscipit est inventore ab dolorum?
 - url: "growth-tribe"
   title: "Growth Tribe"
   image: "partners/growthtribe-logo.png"
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, tenetur sunt molestias obcaecati dolor cum ab atque, sequi expedita ad rerum, animi error a odio? Nobis facere impedit quam, fugiat voluptatum dolores asperiores at? Minus vitae perferendis at dignissimos odio, quaerat magni illo non, delectus officia, cum necessitatibus accusantium. Voluptas delectus eaque rem at obcaecati incidunt, reiciendis nesciunt itaque tenetur dolor magni quibusdam. Odio neque sint maiores distinctio molestias reprehenderit ducimus veniam sequi quisquam expedita incidunt praesentium, natus maxime tempore impedit dolorum. Natus voluptatem excepturi quisquam dolorum, itaque veniam dolorem at, saepe non! Nemo, officiis suscipit est inventore ab dolorum?
+- url: "b-amsterdam"
+  title: "B. Amsterdam"
+  image: "partners/b-logo.png"
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, tenetur sunt molestias obcaecati dolor cum ab atque, sequi expedita ad rerum, animi error a odio? Nobis facere impedit quam, fugiat voluptatum dolores asperiores at? Minus vitae perferendis at dignissimos odio, quaerat magni illo non, delectus officia, cum necessitatibus accusantium. Voluptas delectus eaque rem at obcaecati incidunt, reiciendis nesciunt itaque tenetur dolor magni quibusdam. Odio neque sint maiores distinctio molestias reprehenderit ducimus veniam sequi quisquam expedita incidunt praesentium, natus maxime tempore impedit dolorum. Natus voluptatem excepturi quisquam dolorum, itaque veniam dolorem at, saepe non! Nemo, officiis suscipit est inventore ab dolorum?
+- url: "codam"
+  title: "Codam"
+  image: "partners/codam.png"
   description: >
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, tenetur sunt molestias obcaecati dolor cum ab atque, sequi expedita ad rerum, animi error a odio? Nobis facere impedit quam, fugiat voluptatum dolores asperiores at? Minus vitae perferendis at dignissimos odio, quaerat magni illo non, delectus officia, cum necessitatibus accusantium. Voluptas delectus eaque rem at obcaecati incidunt, reiciendis nesciunt itaque tenetur dolor magni quibusdam. Odio neque sint maiores distinctio molestias reprehenderit ducimus veniam sequi quisquam expedita incidunt praesentium, natus maxime tempore impedit dolorum. Natus voluptatem excepturi quisquam dolorum, itaque veniam dolorem at, saepe non! Nemo, officiis suscipit est inventore ab dolorum?
 - url: "garage-2020"
@@ -16,11 +26,6 @@
 - url: "catalyze"
   title: "Catalyze"
   image: "partners/logo-catalyze.png"
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, tenetur sunt molestias obcaecati dolor cum ab atque, sequi expedita ad rerum, animi error a odio? Nobis facere impedit quam, fugiat voluptatum dolores asperiores at? Minus vitae perferendis at dignissimos odio, quaerat magni illo non, delectus officia, cum necessitatibus accusantium. Voluptas delectus eaque rem at obcaecati incidunt, reiciendis nesciunt itaque tenetur dolor magni quibusdam. Odio neque sint maiores distinctio molestias reprehenderit ducimus veniam sequi quisquam expedita incidunt praesentium, natus maxime tempore impedit dolorum. Natus voluptatem excepturi quisquam dolorum, itaque veniam dolorem at, saepe non! Nemo, officiis suscipit est inventore ab dolorum?
-- url: "lewagon"
-  title: "Le Wagon"
-  image: "partners/lewagon.png"
   description: >
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, tenetur sunt molestias obcaecati dolor cum ab atque, sequi expedita ad rerum, animi error a odio? Nobis facere impedit quam, fugiat voluptatum dolores asperiores at? Minus vitae perferendis at dignissimos odio, quaerat magni illo non, delectus officia, cum necessitatibus accusantium. Voluptas delectus eaque rem at obcaecati incidunt, reiciendis nesciunt itaque tenetur dolor magni quibusdam. Odio neque sint maiores distinctio molestias reprehenderit ducimus veniam sequi quisquam expedita incidunt praesentium, natus maxime tempore impedit dolorum. Natus voluptatem excepturi quisquam dolorum, itaque veniam dolorem at, saepe non! Nemo, officiis suscipit est inventore ab dolorum?
 - url: "degezondestad"
