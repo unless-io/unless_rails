@@ -1,3 +1,13 @@
+- url: "codam"
+  title: "Codam"
+  image: "projects/codam.png"
+  tagline: "Write your future"
+  tags: Development, UX design
+  description: >
+    <strong>Codam is a new programming school based on the famed French <a href="http://www.42.fr/">Ecole 42</a>.</strong><br> 
+    Using an unconventional peer-to-peer method of teaching students are drilled into professional developers. Quality and motivation are key - so the application process, the Piscine, is notoriously tough (but fair). 
+    AND important to know - enrolling is free and it remains free for the entire duration of the program. <br><br>
+    <a href="https://www.codam.nl/">www.codam.nl</a>
 - url: "jouw-stek"
   title: "Jouw Stek"
   image: "projects/jouwstek.png"

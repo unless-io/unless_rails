@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
   get '/contact', to: 'pages#contact'
-  get '/extra-information', to: 'pages#extra_information'
+  # get '/extra-information', to: 'pages#extra_information'
 
   resource :services, only: [:show]
 
