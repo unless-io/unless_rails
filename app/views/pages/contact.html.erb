@@ -1,6 +1,4 @@
 <% content_for :meta_title, "#{DEFAULT_META["meta_product_name"]} | Contact" %>
-
-
 <div class="contact-form">
   <h2 class="margin-bottom">
     Hello, is it me you’re looking for?
@@ -30,7 +28,7 @@
                 <br>
                 <%= mail_to "info@unless.io", "info@unless.io", class: "simple-link-white" %>
                 <br>
-                <a href="tel:+31654357746" class="simple-link-white">+316 543 577 46</a>
+                <a href="tel:+31654357746" class="simple-link-white">+316 307 233 93</a>
               </p>
             </div>
             <div class="data-right">
@@ -42,7 +40,7 @@
                   <input type="text" name="EMAIL" class="text-input" id="input-newsletter" placeholder="Your email">
                   <div class="bottom-line"></div>
                 </div>
-                 <div class="hidden" aria-hidden="true">
+                <div class="hidden" aria-hidden="true">
                   <input type="text" name="b_9053d850a997b91925dd13fdd_c067130711" tabindex="-1" value="">
                 </div>
                 <input type="submit" value="Subscribe" name="subscribe" id="submit-newsletter" class="button-white-outline">
@@ -68,24 +66,20 @@
     </div>
   </div>
 </div>
-
 <% content_for(:js) do %>
-<script>
-  function initMap() {
-    var uluru = {lat: 52.356936, lng: 4.869956};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 15,
-      center: uluru
-    });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
-  }
-</script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_API_BROWSER_KEY'] %>&callback=initMap">
-</script>
+  <script>
+    function initMap() {
+      var uluru = {lat: 52.356936, lng: 4.869956};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_API_BROWSER_KEY'] %>&callback=initMap"></script>
 <% end %>
-
-
